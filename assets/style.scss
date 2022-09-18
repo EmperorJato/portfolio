@@ -1,0 +1,59 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    color: #fff;
+    background: #212121;
+    width: 100%;
+    height: 100%;
+    
+}
+@media screen and (min-width: 970px) {
+    section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+// @mixin section-value{
+//     height: 100vh;
+//     display: flex;
+//     align-items: center;
+// }
+
+// section{
+//     &:nth-child(2){
+//         @include section-value()
+//     }
+//     &:nth-child(3){
+//         @include section-value()
+//     }
+// }
+
+
+.section-title {
+    letter-spacing: 0.14em !important;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #23262D;
+}
+    
+::-webkit-scrollbar-thumb {
+    background: #00BCD4;
+    border-radius: 7px;
+}
