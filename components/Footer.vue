@@ -1,5 +1,5 @@
 <template>
-  <v-footer dark padless>
+  <v-footer color="#23262D">
     <v-card flat tile class="white--text text-center" color="#23262D">
       <v-card-text>
         <v-btn
@@ -16,7 +16,8 @@
         </v-btn>
       </v-card-text>
       <v-card-text class="white--text">
-        <strong>&#169; Steto Javellana</strong> - {{ new Date().getFullYear() }}
+        <strong>&#169; Steto Javellana</strong> -
+        {{ new Date().getFullYear() }}
       </v-card-text>
     </v-card>
   </v-footer>

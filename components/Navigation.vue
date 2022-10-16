@@ -19,19 +19,19 @@
         </v-icon>
       </v-app-bar-nav-icon>
       <div v-else v-show="show">
-        <v-btn text @click="$vuetify.goTo('#home')">
+        <v-btn text @click="$vuetify.goTo('#homeSection')">
           <span class="mr-2">Home</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#project')">
-          <span class="mr-2">Projects</span>
+        <v-btn text @click="$vuetify.goTo('#skillSection')">
+          <span class="mr-2">Skill</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#experience')">
-          <span class="mr-2">Experience</span>
-        </v-btn>
-        <v-btn text @click="$vuetify.goTo('#about')">
+        <v-btn text @click="$vuetify.goTo('#aboutSection')">
           <span class="mr-2">About</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#contact')">
+        <v-btn text @click="$vuetify.goTo('#projectSection')">
+          <span class="mr-2">Project</span>
+        </v-btn>
+        <v-btn text @click="$vuetify.goTo('#contactSection')">
           <span>Contact</span>
         </v-btn>
       </div>
@@ -117,7 +117,9 @@ export default {
     }
   },
   beforeDestroy () {
-    if (typeof window === 'undefined') { return }
+    if (typeof window === 'undefined') {
+      return
+    }
 
     window.removeEventListener('resize', this.onResize, { passive: true })
   },

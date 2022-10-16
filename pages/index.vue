@@ -46,7 +46,9 @@
           cols="12"
           md="6"
           class="d-flex"
-          :class="$vuetify.breakpoint.mdAndDown ? 'justify-center' : 'justify-end'"
+          :class="
+            $vuetify.breakpoint.mdAndDown ? 'justify-center' : 'justify-end'
+          "
         >
           <div class="cyan-bg">
             <v-img src="/img/me.png" contain />
@@ -80,6 +82,6 @@ export default {
   max-width: 500px;
   max-height: 460px;
   border-radius: 50%;
-  background-color: #00BCD4;
+  background-color: #00bcd4;
 }
 </style>

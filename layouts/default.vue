@@ -7,6 +7,9 @@
           <v-col cols="12" md="10">
             <Nuxt />
             <Skill />
+            <About />
+            <Project />
+            <Contact />
           </v-col>
         </v-row>
       </v-container>
