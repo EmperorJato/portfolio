@@ -19,7 +19,6 @@
           :key="i"
           cols="12"
           md="4"
-          class="text-center"
         >
           <v-hover v-slot="{ hover }">
             <div>
@@ -29,7 +28,7 @@
                 shaped
                 :elevation="hover ? 10 : 4"
                 :class="{ up: hover }"
-                light
+                height="200px  "
               >
                 <v-img
                   :src="skill.img"
@@ -37,12 +36,14 @@
                   class="d-block ml-auto mr-auto"
                   :class="{ 'zoom-efect': hover }"
                 />
-                <h3 class="font-weight-regular mb-2">
-                  {{ skill.title }}
-                </h3>
-                <h4 class="font-weight-regular subtitle-1">
+                <div class="title font-weight-bold mb-2 text-center">
+                  <span class="primary--text">{{ skill.title1 }}</span>
+                  &
+                  <span class="primary--text">{{ skill.title2 }}</span>
+                </div>
+                <p class="text-justify">
                   {{ skill.text }}
-                </h4>
+                </p>
               </v-card>
             </div>
           </v-hover>
@@ -62,34 +63,40 @@ export default {
     skills: [
       {
         img: require('~/static/img/skill/icon1.png'),
-        title: 'Problem Solving & Self-focus',
-        text: 'I already have an experience of playing this game.'
+        title1: 'Problem Solving ',
+        title2: ' Self-focus',
+        text: 'I love programming because of these traits. Finding a problem and overcoming this obstacle is what makes programming fun.'
       },
       {
         img: require('~/static/img/skill/icon2.png'),
-        title: 'Sharefulness and Reliability',
-        text: 'I am willing to share my knowledge and ideas in this game.'
+        title1: 'Sharefulness ',
+        title2: ' Reliability',
+        text: ' I may not good enough but I am willing to share every inch of much knowledge to my fellow colleague'
       },
       {
         img: require('~/static/img/skill/icon3.png'),
-        title: 'Teamwork & Communication',
-        text: 'I am happy to help my fellow scholars to avoid being banned on axie.'
+        title1: 'Teamwork ',
+        title2: ' Communication',
+        text: 'I believe that exchanging information, collaborating, and asking or helping if there is a problem will lead the team to success.'
       },
 
       {
         img: require('~/static/img/skill/icon4.png'),
-        title: 'Respectfulness & Friendliness',
-        text: ' I will give my fully support about technical problems of this game as long as it is not beyond my capacity.'
+        title1: 'Respectfulness ',
+        title2: ' Friendliness',
+        text: 'I will give my fully support about technical problems of this game as long as it is not beyond my capacity.'
       },
       {
         img: require('~/static/img/skill/icon5.png'),
-        title: 'Time Management & Innovation',
-        text: 'I am happy to help my fellow scholars to avoid being banned on axie.'
+        title1: 'Time Management ',
+        title2: ' Innovation',
+        text: 'Organizing and planning my time, helps me reduce stress at work. Setting a time frame for my goals and tasks can increase my productivity and a sense of direction in my work.'
       },
 
       {
         img: require('~/static/img/skill/icon4.png'),
-        title: 'Self-improvement & Perseverance',
+        title1: 'Self-improvement ',
+        title2: ' Perseverance',
         text: ' I will give my fully support about technical problems of this game as long as it is not beyond my capacity.'
       }
     ]
