@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="headline font-weight-bold mb-5">
-        Perosonal <span class="primary--text">Attributes</span>
+        Personal <span class="primary--text">Attributes</span>
       </div>
 
       <v-row class="d-flex justify-content-center">
@@ -24,7 +24,7 @@
             <div>
               <v-card
                 dark
-                class="card"
+                class="card text-center"
                 shaped
                 :elevation="hover ? 10 : 4"
                 :class="{ up: hover }"
@@ -36,14 +36,16 @@
                   class="d-block ml-auto mr-auto"
                   :class="{ 'zoom-efect': hover }"
                 />
-                <div class="title font-weight-bold mb-2 text-center">
-                  <span class="primary--text">{{ skill.title1 }}</span>
-                  &
-                  <span class="primary--text">{{ skill.title2 }}</span>
+                <div class="title font-weight-bold mb-2">
+                  {{ skill.title1 }}
+                  <span class="primary--text">&</span>
+                  {{ skill.title2 }}
                 </div>
-                <p class="text-justify">
-                  {{ skill.text }}
-                </p>
+                <v-card-text class="body-1">
+                  <p>
+                    {{ skill.text }}
+                  </p>
+                </v-card-text>
               </v-card>
             </div>
           </v-hover>
@@ -84,7 +86,7 @@ export default {
         img: require('~/static/img/skill/icon4.png'),
         title1: 'Respectfulness ',
         title2: ' Friendliness',
-        text: 'I will give my fully support about technical problems of this game as long as it is not beyond my capacity.'
+        text: 'What I hate the most in the workplace is the toxic employees. In order not to become one I must show respect and keep being friendly to my Camaraderie.'
       },
       {
         img: require('~/static/img/skill/icon5.png'),
@@ -97,7 +99,7 @@ export default {
         img: require('~/static/img/skill/icon4.png'),
         title1: 'Self-improvement ',
         title2: ' Perseverance',
-        text: ' I will give my fully support about technical problems of this game as long as it is not beyond my capacity.'
+        text: 'For me as a programmer, this is the most important trait of all. '
       }
     ]
   })
@@ -106,7 +108,7 @@ export default {
 
  <style scoped>
 .card {
-  min-height: 300px;
+  min-height: 320px;
   padding: 10px;
   transition: 0.5s ease-out;
 }

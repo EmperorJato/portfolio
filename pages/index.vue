@@ -27,18 +27,24 @@
             A full stack web developer with a passion from Bacolod City in the
             <span class="primary--text">Philippines</span>
           </p>
-          <div>
-            <v-btn color="primary" class="white--text mb-2">
-              <v-icon dark left>
+          <div class="d-flex justify-content-start flex-wrap">
+            <v-btn color="primary" class="white--text mr-2 mt-2">
+              <v-icon dark>
                 {{ icons.mdiLinkedin }}
               </v-icon>
-              LinkedIn
             </v-btn>
-            <v-btn color="primary" outlined class="mb-2">
-              <v-icon dark left>
+
+            <v-btn color="primary" class="white--text mr-2 mt-2">
+              <v-icon dark>
                 {{ icons.mdiGithub }}
               </v-icon>
-              Github
+            </v-btn>
+
+            <v-btn color="primary" outlined class="mt-2">
+              <v-icon dark left>
+                {{ icons.mdiFileAccount }}
+              </v-icon>
+              Download CV
             </v-btn>
           </div>
         </v-col>
@@ -60,14 +66,15 @@
 </template>
 
 <script>
-import { mdiHome, mdiLinkedin, mdiGithub } from '@mdi/js'
+import { mdiHome, mdiLinkedin, mdiGithub, mdiFileAccount } from '@mdi/js'
 export default {
   name: 'Home',
   data: () => ({
     icons: {
       mdiHome,
       mdiLinkedin,
-      mdiGithub
+      mdiGithub,
+      mdiFileAccount
     }
   })
 }

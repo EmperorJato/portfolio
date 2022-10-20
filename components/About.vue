@@ -14,7 +14,7 @@
       </div>
       <v-row justify="center">
         <v-col cols="12" md="4">
-          <v-card>
+          <v-card dark>
             <v-card-title> Front-End </v-card-title>
             <v-card-subtitle class="primary--text font-weight-bold">
               Development
@@ -34,7 +34,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" md="4">
-          <v-card>
+          <v-card dark>
             <v-card-title> Back-End </v-card-title>
             <v-card-subtitle class="primary--text font-weight-bold">
               Development
@@ -53,7 +53,7 @@
           </v-card>
         </v-col>
         <v-col cols="12" md="4">
-          <v-card>
+          <v-card dark>
             <v-card-title> Database </v-card-title>
             <v-card-subtitle class="primary--text font-weight-bold">
               Administrator

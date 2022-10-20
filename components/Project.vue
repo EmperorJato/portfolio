@@ -1,13 +1,16 @@
 <template>
   <section id="projectSection">
     <v-container fluid>
-      <div class="d-flex align-center mb-5">
+      <div class="d-flex align-center">
         <v-icon color="primary" left>
           {{ icons.mdiAccountDetails }}
         </v-icon>
         <div class="section-title">
           Projects
         </div>
+      </div>
+      <div class="headline font-weight-bold mb-5">
+        Dealing <span class="primary--text">With</span>
       </div>
       <v-row justify="center">
         <v-col cols="12" md="8">
