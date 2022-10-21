@@ -1,7 +1,11 @@
 <template>
   <section id="projectSection">
     <v-container fluid>
-      <div class="d-flex align-center">
+      <div
+        class="d-flex align-center"
+        data-aos="fade-right"
+        data-aos-duration="4000"
+      >
         <v-icon color="primary" left>
           {{ icons.mdiAccountDetails }}
         </v-icon>
@@ -9,8 +13,10 @@
           Projects
         </div>
       </div>
-      <div class="headline font-weight-bold mb-5">
-        Dealing <span class="primary--text">With</span>
+      <div data-aos="fade-right" data-aos-duration="2000">
+        <div class="headline font-weight-bold mb-5">
+          Dealing <span class="primary--text">With</span>
+        </div>
       </div>
       <v-row justify="center">
         <v-col cols="12" md="8">

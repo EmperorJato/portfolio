@@ -1,11 +1,27 @@
 <template>
   <section id="contactSection">
     <v-container fluid>
+      <div
+        class="d-flex align-center"
+        data-aos="fade-right"
+        data-aos-duration="4000"
+      >
+        <v-icon color="primary" left>
+          {{ icons.mdiCardAccountMail }}
+        </v-icon>
+        <div class="section-title">
+          Contact
+        </div>
+      </div>
+
+      <div data-aos="fade-right" data-aos-duration="2000">
+        <div class="headline font-weight-bold mb-5">
+          Message <span class="primary--text">ME</span>
+        </div>
+      </div>
+
       <v-row>
         <v-col cols="12" md="5">
-          <h1 class="display-1">
-            Contact
-          </h1>
           <h3 class="subtitle-1 my-3">
             Let's talk about everything.<br>Please feel free to contact me if
             you are interested in hiring me.
@@ -85,7 +101,13 @@
 </template>
 
 <script>
-import { mdiAccount, mdiEmail, mdiCommentText, mdiSend } from '@mdi/js'
+import {
+  mdiAccount,
+  mdiEmail,
+  mdiCommentText,
+  mdiSend,
+  mdiCardAccountMail
+} from '@mdi/js'
 export default {
   name: 'Contact',
   data: () => ({
@@ -94,7 +116,8 @@ export default {
       mdiAccount,
       mdiEmail,
       mdiCommentText,
-      mdiSend
+      mdiSend,
+      mdiCardAccountMail
     },
     valid: true,
     form: {

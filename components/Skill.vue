@@ -1,7 +1,11 @@
 <template>
   <section id="skillSection">
     <v-container fluid>
-      <div class="d-flex align-center">
+      <div
+        class="d-flex align-center"
+        data-aos="fade-right"
+        data-aos-duration="4000"
+      >
         <v-icon color="primary" left>
           {{ icons.mdiAccountDetails }}
         </v-icon>
@@ -9,17 +13,13 @@
           Soft Skill
         </div>
       </div>
-      <div class="headline font-weight-bold mb-5">
-        Personal <span class="primary--text">Attributes</span>
+      <div data-aos="fade-right" data-aos-duration="2000">
+        <div class="headline font-weight-bold">
+          Personal <span class="primary--text">Attributes</span>
+        </div>
       </div>
-
-      <v-row class="d-flex justify-content-center">
-        <v-col
-          v-for="(skill, i) in skills"
-          :key="i"
-          cols="12"
-          md="4"
-        >
+      <v-row class="d-flex justify-content-center mt-10">
+        <v-col v-for="(skill, i) in skills" :key="i" cols="12" md="4">
           <v-hover v-slot="{ hover }">
             <div>
               <v-card
@@ -28,7 +28,7 @@
                 shaped
                 :elevation="hover ? 10 : 4"
                 :class="{ up: hover }"
-                height="200px  "
+                :height="$vuetify.breakpoint.lgAndUp ? '350px': ''"
               >
                 <v-img
                   :src="skill.img"
@@ -67,7 +67,7 @@ export default {
         img: require('~/static/img/skill/icon1.png'),
         title1: 'Problem Solving ',
         title2: ' Self-focus',
-        text: 'I love programming because of these traits. Finding a problem and overcoming this obstacle is what makes programming fun.'
+        text: 'I love programming because of these traits. Finding a problem and overcoming this obstacle makes programming fun.'
       },
       {
         img: require('~/static/img/skill/icon2.png'),
@@ -79,7 +79,7 @@ export default {
         img: require('~/static/img/skill/icon3.png'),
         title1: 'Teamwork ',
         title2: ' Communication',
-        text: 'I believe that exchanging information, collaborating, and asking or helping if there is a problem will lead the team to success.'
+        text: 'I believe that sharing information, collaborating, and asking questions or helping if there is a problem will lead the team to success..'
       },
 
       {
@@ -92,11 +92,11 @@ export default {
         img: require('~/static/img/skill/icon5.png'),
         title1: 'Time Management ',
         title2: ' Innovation',
-        text: 'Organizing and planning my time, helps me reduce stress at work. Setting a time frame for my goals and tasks can increase my productivity and a sense of direction in my work.'
+        text: 'Organizing and planning my time, helps me reduce stress at work. Setting a time frame for my tasks can increase my productivity and a sense of direction in my work.'
       },
 
       {
-        img: require('~/static/img/skill/icon4.png'),
+        img: require('~/static/img/skill/icon6.png'),
         title1: 'Self-improvement ',
         title2: ' Perseverance',
         text: 'For me as a programmer, this is the most important trait of all. '
@@ -108,7 +108,6 @@ export default {
 
  <style scoped>
 .card {
-  min-height: 320px;
   padding: 10px;
   transition: 0.5s ease-out;
 }
