@@ -100,11 +100,11 @@ export default {
       mdiReorderHorizontal
     },
     links: [
-      [mdiHome, 'Home', '#home'],
-      [mdiStarCircleOutline, 'Projects', '#project'],
-      [mdiFolder, 'Experience', '#experience'],
-      [mdiAccountDetails, 'About', '#about'],
-      [mdiCardAccountMail, 'Contact', '#contact']
+      [mdiHome, 'Home', '#homeSection'],
+      [mdiStarCircleOutline, 'Projects', '#projectSection'],
+      [mdiFolder, 'Experience', '#experienceSection'],
+      [mdiAccountDetails, 'About', '#aboutSection'],
+      [mdiCardAccountMail, 'Contact', '#contactSection']
     ]
   }),
   watch: {

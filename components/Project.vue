@@ -65,8 +65,8 @@ export default {
         title: 'Axie Tracker'
       },
       {
-        img: require('~/static/img/project/pr.jpg'),
-        title: 'Axie Tracker'
+        img: require('~/static/img/project/purchase-requisition.png'),
+        title: 'Purchase Requisition'
       }
     ]
   })

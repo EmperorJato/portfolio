@@ -2,9 +2,9 @@
   <section id="skillSection">
     <v-container fluid>
       <div
-        class="d-flex align-center"
         data-aos="fade-right"
         data-aos-duration="4000"
+        class="d-flex align-center"
       >
         <v-icon color="primary" left>
           {{ icons.mdiAccountDetails }}
