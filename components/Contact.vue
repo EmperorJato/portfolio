@@ -90,7 +90,7 @@
           </v-form>
         </v-col>
       </v-row>
-      <div class="mt-5">
+      <div class="mt-16">
         <div class="waves wave-1" />
         <div class="waves wave-2" />
         <div class="waves wave-3" />

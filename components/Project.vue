@@ -20,30 +20,22 @@
       </div>
       <v-row justify="center">
         <v-col cols="12" md="8">
-          <v-card elevation="2">
-            <v-img :src="projects[0].img" contain />
-          </v-card>
+          <v-row>
+            <v-col cols="12" md="12">
+              <v-card elevation="2">
+                <v-img :src="projects[0].img" contain />
+              </v-card>
+            </v-col>
+            <v-col cols="12" md="12">
+              <v-card elevation="2">
+                <v-img :src="projects[0].img" contain />
+              </v-card>
+            </v-col>
+          </v-row>
         </v-col>
         <v-col cols="12" md="4">
-          <v-card elevation="2" class="fill-height">
-            <v-img :src="projects[1].img" height="100%" />
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row justify="center">
-        <v-col cols="12" md="4">
-          <v-card elevation="2">
-            <v-img :src="projects[1].img" contain />
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="4">
-          <v-card elevation="2">
-            <v-img :src="projects[1].img" contain />
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="4">
-          <v-card elevation="2">
-            <v-img :src="projects[1].img" contain />
+          <v-card elevation="2" height="100%">
+            <v-img :src="projects[1].img" />
           </v-card>
         </v-col>
       </v-row>

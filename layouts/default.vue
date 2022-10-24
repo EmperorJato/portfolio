@@ -6,10 +6,12 @@
         <v-row justify="center">
           <v-col cols="12" md="10">
             <Nuxt />
-            <Skill />
-            <About />
-            <Project />
-            <Contact />
+            <div v-if="show">
+              <Skill />
+              <About />
+              <Project />
+              <Contact />
+            </div>
           </v-col>
         </v-row>
       </v-container>
@@ -41,6 +43,7 @@ import { mdiArrowUp } from '@mdi/js'
 export default {
   name: 'Default',
   data: () => ({
+    show: false,
     color: 'transparent',
     fab: null,
     flat: true,
@@ -67,6 +70,9 @@ export default {
     }
   },
   mounted () {
+    this.$nextTick(() => {
+      this.show = true
+    })
   },
   methods: {
     onScroll (e) {
