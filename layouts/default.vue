@@ -2,7 +2,7 @@
   <v-app dark>
     <Navigation :color="color" :flat="flat" />
     <v-main>
-      <v-container fluid>
+      <v-container fluid fill-height>
         <v-row justify="center">
           <v-col cols="12" md="10">
             <Nuxt />
