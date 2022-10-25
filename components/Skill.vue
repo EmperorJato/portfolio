@@ -69,7 +69,7 @@ export default {
       {
         img: require('~/static/img/skill/icon2.png'),
         title: 'Empathy',
-        text: 'I know the feeling of being a programmer with no one to ask. No senior to teach you when you hit a bottleneck, so if there's someone in need I will see if I have the ability to carry some of their burden.'
+        text: 'I know the feeling of being a programmer with no one to ask. No senior to teach you when you hit a bottleneck, so if there is someone in need I will see if I have the ability to carry some of their burden.'
       },
       {
         img: require('~/static/img/skill/icon3.png'),
