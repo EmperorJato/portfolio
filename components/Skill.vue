@@ -69,12 +69,12 @@ export default {
       {
         img: require('~/static/img/skill/icon2.png'),
         title: 'Empathy',
-        text: 'I know the feeling of being a programmer with no one to ask. No senior to teach you when you hit a bottleneck, so if there's someone in need I will take part of the burden that they are carrying.'
+        text: 'I know the feeling of being a programmer with no one to ask. No senior to teach you when you hit a bottleneck, so if there's someone in need I will see if I have the ability to carry some of their burden.'
       },
       {
         img: require('~/static/img/skill/icon3.png'),
         title: 'Teamwork',
-        text: 'I believe that sharing information, collaborating, and asking questions or helping if there is a problem will lead the team to success..'
+        text: 'I believe that sharing information, collaborating, and asking questions or helping if there is a problem will lead the team to success.'
       },
 
       {
@@ -87,11 +87,10 @@ export default {
         title: 'Time Management',
         text: 'Organizing and planning my time, helps me reduce stress at work. Setting a time frame for my tasks can increase my productivity and a sense of direction in my work.'
       },
-
       {
         img: require('~/static/img/skill/icon6.png'),
         title: 'Self-improvement & Perseverance',
-        text: 'For me as a programmer, this is the most important trait of all. '
+        text: 'For me as a programmer, this is the most important trait of all.'
       }
     ]
   })
