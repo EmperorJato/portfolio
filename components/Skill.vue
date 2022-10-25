@@ -80,7 +80,7 @@ export default {
       {
         img: require('~/static/img/skill/icon4.png'),
         title: 'Respectfulness',
-        text: 'What I hate the most in the workplace is the toxic employees. In order not to become one, I must show respect all the time to everyone, this helps me balance my factor in workplace.'
+        text: 'What I hate the most in the workplace is the toxic employees. In order not to become one, I must show respect all the time to everyone, this helps me balance my factor in a workplace.'
       },
       {
         img: require('~/static/img/skill/icon5.png'),
