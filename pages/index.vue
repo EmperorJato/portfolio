@@ -40,7 +40,7 @@
               </v-icon>
             </v-btn>
 
-            <v-btn color="primary" outlined class="mt-2 white--text" href="CV_STETO_JAVELLANA.docx" download>
+            <v-btn color="primary" outlined class="white--text mt-2" href="files/RESUME_STETO_JAVELLANA.docx" download>
               <v-icon dark left>
                 {{ icons.mdiFileAccount }}
               </v-icon>
