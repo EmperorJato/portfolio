@@ -37,9 +37,7 @@
                   :class="{ 'zoom-efect': hover }"
                 />
                 <div class="title font-weight-bold mb-2">
-                  {{ skill.title1 }}
-                  <span class="primary--text">&</span>
-                  {{ skill.title2 }}
+                  {{ skill.title }}
                 </div>
                 <v-card-text class="body-1">
                   <p>
@@ -65,40 +63,34 @@ export default {
     skills: [
       {
         img: require('~/static/img/skill/icon1.png'),
-        title1: 'Problem Solving ',
-        title2: ' Self-focus',
+        title: 'Problem Solving',
         text: 'I love programming because of these traits. Finding a problem and overcoming this obstacle makes programming fun.'
       },
       {
         img: require('~/static/img/skill/icon2.png'),
-        title1: 'Sharefulness ',
-        title2: ' Reliability',
+        title: 'Empathy',
         text: ' I may not good enough but I am willing to share every inch of much knowledge to my fellow colleague'
       },
       {
         img: require('~/static/img/skill/icon3.png'),
-        title1: 'Teamwork ',
-        title2: ' Communication',
+        title: 'Teamwork',
         text: 'I believe that sharing information, collaborating, and asking questions or helping if there is a problem will lead the team to success..'
       },
 
       {
         img: require('~/static/img/skill/icon4.png'),
-        title1: 'Respectfulness ',
-        title2: ' Friendliness',
+        title: 'Respectfulness',
         text: 'What I hate the most in the workplace is the toxic employees. In order not to become one I must show respect and keep being friendly to my Camaraderie.'
       },
       {
         img: require('~/static/img/skill/icon5.png'),
-        title1: 'Time Management ',
-        title2: ' Innovation',
+        title: 'Time Management'
         text: 'Organizing and planning my time, helps me reduce stress at work. Setting a time frame for my tasks can increase my productivity and a sense of direction in my work.'
       },
 
       {
         img: require('~/static/img/skill/icon6.png'),
-        title1: 'Self-improvement ',
-        title2: ' Perseverance',
+        title: 'Self-improvement & Perseverance',
         text: 'For me as a programmer, this is the most important trait of all. '
       }
     ]
