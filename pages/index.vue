@@ -24,7 +24,7 @@
             I'm Steto <span class="primary--text">Javellana</span>
           </div>
           <p class="title">
-            A full stack web developer with a passion from Bacolod City in the
+            A junior web developer passionate about creating web business applications from Bacolod City,
             <span class="primary--text">Philippines</span>
           </p>
           <div class="d-flex justify-content-start flex-wrap">
