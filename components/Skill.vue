@@ -84,7 +84,7 @@ export default {
       },
       {
         img: require('~/static/img/skill/icon5.png'),
-        title: 'Time Management'
+        title: 'Time Management',
         text: 'Organizing and planning my time, helps me reduce stress at work. Setting a time frame for my tasks can increase my productivity and a sense of direction in my work.'
       },
 
