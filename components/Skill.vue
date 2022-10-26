@@ -10,12 +10,12 @@
           {{ icons.mdiAccountDetails }}
         </v-icon>
         <div class="section-title">
-          Soft Skill
+          My Personal Attributes
         </div>
       </div>
       <div data-aos="fade-right" data-aos-duration="2000">
         <div class="headline font-weight-bold">
-          Personal <span class="primary--text">Attributes</span>
+          Soft <span class="primary--text">Skill</span>
         </div>
       </div>
       <v-row class="d-flex justify-content-center mt-10">

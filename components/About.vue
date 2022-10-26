@@ -10,71 +10,48 @@
           {{ icons.mdiAccountDetails }}
         </v-icon>
         <div class="section-title">
-          About Me
+          My Services and Experience
         </div>
       </div>
       <div data-aos="fade-right" data-aos-duration="2000">
         <div class="headline font-weight-bold mb-5">
-          My <span class="primary--text">Services</span>
+          About <span class="primary--text">Me</span>
         </div>
       </div>
       <v-row justify="center">
-        <v-col cols="12" md="4">
-          <v-card dark>
-            <v-card-title> Front-End </v-card-title>
-            <v-card-subtitle class="primary--text font-weight-bold">
-              Development
-            </v-card-subtitle>
-            <v-card-text class="body-1">
-              I can develop a pleasant experience to the user such as easy to
-              understand user flow, validations, and errors.
-            </v-card-text>
-            <v-card-text class="body-1">
-              <p>Experience on:</p>
-              <p>- AJAX or Axios</p>
-              <p>- JSON Mapping</p>
-              <p>- State Management (Vuex)</p>
-              <p>- Modifying Plugins or 3rd party API</p>
-              <p>- Promises or Async/await</p>
-            </v-card-text>
-          </v-card>
+        <v-col cols="12" sm="4" class="hidden-xs-only">
+          <v-img
+            src="/img/about/about_me.svg"
+            class="d-block ml-auto mr-auto"
+            max-width="350px"
+          />
         </v-col>
-        <v-col cols="12" md="4">
-          <v-card dark>
-            <v-card-title> Back-End </v-card-title>
-            <v-card-subtitle class="primary--text font-weight-bold">
-              Development
-            </v-card-subtitle>
-            <v-card-text class="body-1">
-              I can create a lightweight, secure, and fast response RESTful API.
-            </v-card-text>
-            <v-card-text class="body-1">
-              <p>Experience on:</p>
-              <p>- OOP and MVC</p>
-              <p>- Authorization and Authentication</p>
-              <p>- JWT Token and Refresh Token</p>
-              <p>- Roles and Permissions</p>
-              <p>- OAuth2 and Middlewares</p>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="4">
-          <v-card dark>
-            <v-card-title> Database </v-card-title>
-            <v-card-subtitle class="primary--text font-weight-bold">
-              Administrator
-            </v-card-subtitle>
-            <v-card-text class="body-1">
-              I can manage databases to make it efficiently and flexibly.
-            </v-card-text>
-            <v-card-text class="body-1">
-              <p>Experience on :</p>
-              <p>- Stored Procedure and Raw SQL Queries</p>
-              <p>- Indexing</p>
-              <p>- Migrations</p>
-              <p>- One-to-One, One-to-Many, and Many-to-Many Relationships</p>
-            </v-card-text>
-          </v-card>
+        <v-col cols="12" sm="8" class="white--text text-left">
+          <v-carousel
+            cycle
+            height="100%"
+            hide-delimiter-background
+            show-arrows-on-hover
+          >
+            <v-carousel-item v-for="(slide, dev) in developments" :key="dev">
+              <v-card dark max-width="750">
+                <v-card-title> {{ slide.title }}</v-card-title>
+                <v-card-subtitle class="primary--text font-weight-bold">
+                  Development
+                </v-card-subtitle>
+                <v-card-text class="body-1">
+                  {{ slide.subTitle }}
+                </v-card-text>
+                <v-card-text class="body-1">
+                  <p>Experience on:</p>
+
+                  <div v-for="(items, i) in slide.experience" :key="i">
+                    <p>{{ items }}</p>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-carousel-item>
+          </v-carousel>
         </v-col>
       </v-row>
     </v-container>
@@ -103,6 +80,41 @@ export default {
       ['mysql.png', 'MySQL'],
       ['mssql.png', 'MSSQL'],
       ['csharp.png', 'C#']
+    ],
+    developments: [
+      {
+        title: 'Front-End',
+        subTitle:
+          'I can develop a pleasant experience to the user such as easy to understand user flow, validations, and errors.',
+        experience: [
+          'Vue.js Ecosystem',
+          'Ajax or Axios',
+          'JSON Mapping',
+          'Modifying Plugins or 3rd Party API',
+          'Promises or Asycnhronous and Synchronous operations'
+        ]
+      },
+      {
+        title: 'Back-End',
+        subTitle: 'I can create a secure and fast response rest services.',
+        experience: [
+          'OOP and MVC',
+          'Authorization, Authentication, and OAuth2',
+          'Rules, Permissions, and Middlewares',
+          'JWT token and Refresh token',
+          'ORM Tools (C# Dapper or EF and Laravel Elequent)'
+        ]
+      },
+      {
+        title: 'Database',
+        subTitle: 'I can manage databases to make it efficiently and flexibly.',
+        experience: [
+          'Stored Procedure and Raw sql queries',
+          'Indexing (Clustered and Non-Clustered)',
+          'Migration',
+          'Table Relationship (One-to-One, One-to-Many, and Many-to-Many)'
+        ]
+      }
     ]
   })
 }
