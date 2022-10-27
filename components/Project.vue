@@ -10,12 +10,12 @@
           {{ icons.mdiAccountDetails }}
         </v-icon>
         <div class="section-title">
-          Projects
+          Handling with
         </div>
       </div>
       <div data-aos="fade-right" data-aos-duration="2000">
         <div class="headline font-weight-bold mb-5">
-          Dealing <span class="primary--text">With</span>
+          Proj<span class="primary--text">ects</span>
         </div>
       </div>
       <v-row justify="center">

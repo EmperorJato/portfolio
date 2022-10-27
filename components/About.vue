@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <v-row justify="center" align="center">
+      <v-row justify="center" align="center" height>
         <v-col cols="12" sm="4" class="hidden-xs-only">
           <v-img
             src="/img/about/about_me.svg"
@@ -28,37 +28,54 @@
             max-width="350px"
           />
         </v-col>
-        <v-col cols="12" sm="8" class="white--text text-left">
-          <v-carousel
-            cycle
-            interval="15000"
-            height="100%"
-            hide-delimiter-background
-            show-arrows-on-hover
-          >
-            <v-carousel-item v-for="(slide, dev) in developments" :key="dev">
-              <v-row justify="center">
-                <v-col cols="12" md="6">
-                  <v-card dark height="550px">
-                    <v-card-title> {{ slide.title }}</v-card-title>
-                    <v-card-subtitle class="primary--text font-weight-bold">
-                      Development
-                    </v-card-subtitle>
-                    <v-card-text class="body-1">
+        <v-col cols="12" sm="8" class="text-end">
+          <v-row justify="end">
+            <v-col cols="12" md="10">
+              <v-carousel cycle interval="15000" show-arrows-on-hover>
+                <v-carousel-item v-for="(slide, dev) in developments" :key="dev">
+                  <v-card class="mt-8 text-center">
+                    <v-sheet
+                      class="
+                        v-sheet--offset
+                        mx-auto
+                        d-flex
+                        align-center
+                        justify-center
+                        py-3
+                      "
+                      color="cyan"
+                      elevation="12"
+                      max-width="65%"
+                      dark
+                    >
+                      <div class="text-center">
+                        <div class="font-weight-medium text-overline">
+                          {{ slide.title }}
+                        </div>
+                      </div>
+                    </v-sheet>
+
+                    <v-card-text class="text-subtitle-1 font-weight-medium">
                       {{ slide.subTitle }}
                     </v-card-text>
-                    <v-card-text class="body-1">
-                      <p>Experience on:</p>
-
+                    <v-card-text class="body-1" style="height: 700px">
                       <div v-for="(items, i) in slide.experience" :key="i">
-                        <p>{{ items }}</p>
+                        <p>
+                          <v-icon color="success" left>
+                            {{ icons.mdiCheckBold }}
+                          </v-icon>
+                          {{ items }}
+                        </p>
                       </div>
                     </v-card-text>
+                    <v-card-actions>
+                      <v-divider class="mx-16" />
+                    </v-card-actions>
                   </v-card>
-                </v-col>
-              </v-row>
-            </v-carousel-item>
-          </v-carousel>
+                </v-carousel-item>
+              </v-carousel>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-container>
@@ -66,12 +83,13 @@
 </template>
 
 <script>
-import { mdiAccountDetails } from '@mdi/js'
+import { mdiAccountDetails, mdiCheckBold } from '@mdi/js'
 export default {
   name: 'About',
   data: () => ({
     icons: {
-      mdiAccountDetails
+      mdiAccountDetails,
+      mdiCheckBold
     },
     stacks: [
       ['html.png', 'HTML'],
@@ -90,7 +108,7 @@ export default {
     ],
     developments: [
       {
-        title: 'Front-End',
+        title: 'FrontEnd',
         subTitle:
           'I can develop a pleasant experience to the user such as easy to understand user flow, validations, and errors.',
         experience: [
@@ -98,28 +116,29 @@ export default {
           'Ajax or Axios',
           'JSON Mapping',
           'Modifying Plugins or 3rd Party API',
-          'Promises or Asycnhronous and Synchronous operations'
+          'Promises'
         ]
       },
       {
-        title: 'Back-End',
+        title: 'BackEnd',
         subTitle: 'I can create a secure and fast response rest services.',
         experience: [
           'OOP and MVC',
-          'Authorization, Authentication, and OAuth2',
+          'Authorization, Authentication',
           'Rules, Permissions, and Middlewares',
           'JWT token and Refresh token',
-          'ORM Tools (C# Dapper or EF and Laravel Elequent)'
+          'ORM Tools'
         ]
       },
       {
         title: 'Database',
         subTitle: 'I can manage databases to make it efficiently and flexibly.',
         experience: [
-          'Stored Procedure and Raw sql queries',
-          'Indexing (Clustered and Non-Clustered)',
+          'Stored Procedure',
+          'Raw SQL queries',
+          'Indexing',
           'Migration',
-          'Table Relationship (One-to-One, One-to-Many, and Many-to-Many)'
+          'Table Relationship'
         ]
       }
     ]
@@ -128,4 +147,12 @@ export default {
 </script>
 
 <style>
+.v-sheet--offset {
+  top: -24px;
+  position: relative;
+}
+
+.v-carousel__controls{
+
+}
 </style>

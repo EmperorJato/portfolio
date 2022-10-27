@@ -10,13 +10,13 @@
           {{ icons.mdiCardAccountMail }}
         </v-icon>
         <div class="section-title">
-          Contact
+          GET IN TOUCH WITH ME
         </div>
       </div>
 
       <div data-aos="fade-right" data-aos-duration="2000">
         <div class="headline font-weight-bold mb-5">
-          Message <span class="primary--text">ME</span>
+          Cont<span class="primary--text">act</span>
         </div>
       </div>
 
