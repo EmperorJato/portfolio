@@ -1,24 +1,26 @@
 <template>
   <section id="aboutSection">
     <v-container fluid>
-      <div
-        class="d-flex align-center"
-        data-aos="fade-right"
-        data-aos-duration="4000"
-      >
-        <v-icon color="primary" left>
-          {{ icons.mdiAccountDetails }}
-        </v-icon>
-        <div class="section-title">
-          My Services and Experience
+      <div class="align-start mb-10">
+        <div
+          class="d-flex align-center"
+          data-aos="fade-right"
+          data-aos-duration="4000"
+        >
+          <v-icon color="primary" left>
+            {{ icons.mdiAccountDetails }}
+          </v-icon>
+          <div class="section-title">
+            My Services and Experience
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
+          <div class="headline font-weight-bold mb-5">
+            About <span class="primary--text">Me</span>
+          </div>
         </div>
       </div>
-      <div data-aos="fade-right" data-aos-duration="2000">
-        <div class="headline font-weight-bold mb-5">
-          About <span class="primary--text">Me</span>
-        </div>
-      </div>
-      <v-row justify="center">
+      <v-row justify="center" align="center">
         <v-col cols="12" sm="4" class="hidden-xs-only">
           <v-img
             src="/img/about/about_me.svg"
@@ -29,27 +31,32 @@
         <v-col cols="12" sm="8" class="white--text text-left">
           <v-carousel
             cycle
+            interval="15000"
             height="100%"
             hide-delimiter-background
             show-arrows-on-hover
           >
             <v-carousel-item v-for="(slide, dev) in developments" :key="dev">
-              <v-card dark max-width="750">
-                <v-card-title> {{ slide.title }}</v-card-title>
-                <v-card-subtitle class="primary--text font-weight-bold">
-                  Development
-                </v-card-subtitle>
-                <v-card-text class="body-1">
-                  {{ slide.subTitle }}
-                </v-card-text>
-                <v-card-text class="body-1">
-                  <p>Experience on:</p>
+              <v-row justify="center">
+                <v-col cols="12" md="6">
+                  <v-card dark height="550px">
+                    <v-card-title> {{ slide.title }}</v-card-title>
+                    <v-card-subtitle class="primary--text font-weight-bold">
+                      Development
+                    </v-card-subtitle>
+                    <v-card-text class="body-1">
+                      {{ slide.subTitle }}
+                    </v-card-text>
+                    <v-card-text class="body-1">
+                      <p>Experience on:</p>
 
-                  <div v-for="(items, i) in slide.experience" :key="i">
-                    <p>{{ items }}</p>
-                  </div>
-                </v-card-text>
-              </v-card>
+                      <div v-for="(items, i) in slide.experience" :key="i">
+                        <p>{{ items }}</p>
+                      </div>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
             </v-carousel-item>
           </v-carousel>
         </v-col>

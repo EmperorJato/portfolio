@@ -1,24 +1,26 @@
 <template>
   <section id="skillSection">
     <v-container fluid>
-      <div
-        data-aos="fade-right"
-        data-aos-duration="4000"
-        class="d-flex align-center"
-      >
-        <v-icon color="primary" left>
-          {{ icons.mdiAccountDetails }}
-        </v-icon>
-        <div class="section-title">
-          My Personal Attributes
+      <div class="align-start mb-10">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="4000"
+          class="d-flex align-center"
+        >
+          <v-icon color="primary" left>
+            {{ icons.mdiAccountDetails }}
+          </v-icon>
+          <div class="section-title">
+            My Personal Attributes
+          </div>
+        </div>
+        <div data-aos="fade-right" data-aos-duration="2000">
+          <div class="headline font-weight-bold">
+            Soft <span class="primary--text">Skill</span>
+          </div>
         </div>
       </div>
-      <div data-aos="fade-right" data-aos-duration="2000">
-        <div class="headline font-weight-bold">
-          Soft <span class="primary--text">Skill</span>
-        </div>
-      </div>
-      <v-row class="d-flex justify-content-center mt-10">
+      <v-row class="d-flex justify-content-center">
         <v-col v-for="(skill, i) in skills" :key="i" cols="12" md="4">
           <v-hover v-slot="{ hover }">
             <div>
