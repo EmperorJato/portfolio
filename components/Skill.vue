@@ -22,33 +22,40 @@
       </div>
       <v-row class="d-flex justify-content-center">
         <v-col v-for="(skill, i) in skills" :key="i" cols="12" md="4">
-          <v-hover v-slot="{ hover }">
-            <div>
-              <v-card
-                dark
-                class="card text-center"
-                shaped
-                :elevation="hover ? 10 : 4"
-                :class="{ up: hover }"
-                :height="$vuetify.breakpoint.lgAndUp ? '350px': ''"
-              >
-                <v-img
-                  :src="skill.img"
-                  max-width="100px"
-                  class="d-block ml-auto mr-auto"
-                  :class="{ 'zoom-efect': hover }"
-                />
-                <div class="title font-weight-bold mb-2">
-                  {{ skill.title }}
-                </div>
-                <v-card-text class="body-1">
-                  <p>
-                    {{ skill.text }}
-                  </p>
-                </v-card-text>
-              </v-card>
-            </div>
-          </v-hover>
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="6000"
+            :data-aos-delay="100 * i"
+          >
+            <v-hover v-slot="{ hover }">
+              <div>
+                <v-card
+                  dark
+                  class="card text-center"
+                  shaped
+                  :elevation="hover ? 10 : 4"
+                  :class="{ up: hover }"
+                  :height="$vuetify.breakpoint.lgAndUp ? '350px': ''"
+                >
+                  <v-img
+                    :src="skill.img"
+                    max-width="100px"
+                    class="d-block ml-auto mr-auto"
+                    :class="{ 'zoom-efect': hover }"
+                  />
+                  <div class="title font-weight-bold mb-2">
+                    {{ skill.title }}
+                  </div>
+                  <v-card-text class="body-1">
+                    <p>
+                      {{ skill.text }}
+                    </p>
+                  </v-card-text>
+                </v-card>
+              </div>
+            </v-hover>
+          </div>
         </v-col>
       </v-row>
     </v-container>

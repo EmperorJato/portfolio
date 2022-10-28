@@ -26,10 +26,10 @@ section{
     width: 100%;
     height: 80px;
     background: url('~/static/img/wave.png');
-    background-size: 1000px 100px;
+    background-size: 1000px 80px;
 
     &.wave-1 {
-        animation: wave-animation 30s linear infinite;
+        animation: wave-animation 15s linear infinite;
         z-index: 4;
         opacity: 1;
         animation-delay: 0s;
@@ -37,27 +37,27 @@ section{
     }
 
     &.wave-2 {
-        animation: wave-animation-2 15s linear infinite;
+        animation: wave-animation-2 7s linear infinite;
         z-index: 3;
-        opacity: 0.5;
+        opacity: 0.3;
         animation-delay: -5s;
-        bottom: 6px;
+        bottom: 10px;
     }
 
     &.wave-3 {
-        animation: wave-animation 30s linear infinite;
+        animation: wave-animation 15s linear infinite;
         z-index: 2;
-        opacity: 0.8;
+        opacity: 0.1;
         animation-delay: -2s;
-        bottom: 3px;
+        bottom: 15px;
     }
 
     &.wave-4 {
-        animation: wave-animation-2 15s linear infinite;
+        animation: wave-animation-2 7s linear infinite;
         z-index: 1;
-        opacity: 0.3;
+        opacity: 0.5;
         animation-delay: -5s;
-        bottom: 9px;
+        bottom: 20px;
     }
 }
 

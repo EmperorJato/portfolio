@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app v-cloak>
     <Navigation :color="color" :flat="flat" />
     <v-main>
       <v-container fluid fill-height>
@@ -90,4 +90,5 @@ export default {
 </script>
 
 <style>
+
 </style>
