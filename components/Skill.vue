@@ -73,23 +73,23 @@ export default {
       {
         img: require('~/static/img/skill/icon1.png'),
         title: 'Problem Solving',
-        text: 'I love programming because of these traits. Finding a problem and overcoming this obstacle makes programming fun.'
+        text: 'I love programming because of this trait. Finding a problem and overcoming this obstacle makes programming fun.'
       },
       {
         img: require('~/static/img/skill/icon2.png'),
         title: 'Empathy',
-        text: 'I know the feeling of being a programmer with no one to ask. No senior to teach you when you hit a bottleneck, so if there is someone in need I will see if I have the ability to carry some of their burden.'
+        text: 'if you understand the feeling of someone your actions and the way you make an application will be wise and discerning. So if there is someone in need I will see if I have the ability to carry some of their burden.'
       },
       {
         img: require('~/static/img/skill/icon3.png'),
         title: 'Teamwork',
-        text: 'I believe that sharing information, collaborating, and asking questions or helping if there is a problem will lead the team to success.'
+        text: 'I believe that sharing information, collaborating, asking questions and helping if there is a problem will lead the team to success.'
       },
 
       {
         img: require('~/static/img/skill/icon4.png'),
         title: 'Respectfulness',
-        text: 'What I hate the most in the workplace is the toxic employees. In order not to become one, I must show respect all the time to everyone, this helps me balance my factor in a workplace.'
+        text: 'What I hate the most in the workplace is the toxic employees. As long as I show respect, then the other party would definitely be affected by my respectful manners. , this also helps me balance the factor in a workplace.'
       },
       {
         img: require('~/static/img/skill/icon5.png'),
