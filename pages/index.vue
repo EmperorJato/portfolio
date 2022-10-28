@@ -28,13 +28,13 @@
             <span class="primary--text">Philippines</span>
           </p>
           <div class="d-flex justify-content-start flex-wrap">
-            <v-btn color="primary" class="white--text mr-2 mt-2">
+            <v-btn color="primary" class="white--text mr-2 mt-2" href="https://www.linkedin.com/in/steto-javellana-863038245/">
               <v-icon dark>
                 {{ icons.mdiLinkedin }}
               </v-icon>
             </v-btn>
 
-            <v-btn color="primary" class="white--text mr-2 mt-2">
+            <v-btn color="primary" class="white--text mr-2 mt-2" href="https://github.com/EmperorJato?tab=repositories">
               <v-icon dark>
                 {{ icons.mdiGithub }}
               </v-icon>
