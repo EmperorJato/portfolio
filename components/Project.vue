@@ -28,7 +28,7 @@
             </v-col>
             <v-col cols="12" md="12">
               <v-card elevation="2">
-                <v-img :src="projects[0].img" contain />
+                <v-img :src="projects[1].img" contain />
               </v-card>
             </v-col>
           </v-row>
@@ -57,7 +57,7 @@ export default {
         title: 'Axie Tracker'
       },
       {
-        img: require('~/static/img/project/purchase-requisition.png'),
+        img: require('~/static/img/project/purchase-requisition.jpg'),
         title: 'Purchase Requisition'
       }
     ]
