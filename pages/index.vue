@@ -24,27 +24,44 @@
             I'm Steto <span class="primary--text">Javellana</span>
           </div>
           <p class="title">
-            A junior developer passionate about creating business web applications from Bacolod City,
+            A junior developer passionate about creating business web
+            applications from Bacolod City,
             <span class="primary--text">Philippines</span>
           </p>
           <div class="d-flex justify-content-start flex-wrap">
-            <v-btn color="primary" class="white--text mr-2 mt-2" href="https://www.linkedin.com/in/steto-javellana-863038245/" target="_blank">
+            <v-btn
+              color="primary"
+              class="white--text mr-2 mt-2"
+              href="https://www.linkedin.com/in/steto-javellana-863038245/"
+              target="_blank"
+            >
               <v-icon dark>
                 {{ icons.mdiLinkedin }}
               </v-icon>
             </v-btn>
 
-            <v-btn color="primary" class="white--text mr-2 mt-2" href="https://github.com/EmperorJato?tab=repositories" target="_blank">
+            <v-btn
+              color="primary"
+              class="white--text mr-2 mt-2"
+              href="https://github.com/EmperorJato?tab=repositories"
+              target="_blank"
+            >
               <v-icon dark>
                 {{ icons.mdiGithub }}
               </v-icon>
             </v-btn>
 
-            <v-btn color="primary" outlined class="white--text mt-2" href="/files/RESUME_STETO_JAVELLANA.docx" download>
-              <v-icon dark left>
-                {{ icons.mdiFileAccount }}
-              </v-icon>
-              Download CV
+            <v-btn
+              color="white"
+              outlined
+              class="mt-2"
+              href="/files/CV_STETO_JAVELLANA.docx"
+              download
+            >
+              <span class="primary--text">
+
+                Download CV
+              </span>
             </v-btn>
           </div>
         </v-col>
@@ -90,5 +107,6 @@ export default {
   max-height: 460px;
   border-radius: 50%;
   background-color: #00bcd4;
+  overflow: hidden;
 }
 </style>

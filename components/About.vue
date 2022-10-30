@@ -156,7 +156,4 @@ export default {
   position: relative;
 }
 
-.v-carousel__controls{
-
-}
 </style>
