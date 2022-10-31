@@ -71,35 +71,35 @@ export default {
     },
     skills: [
       {
-        img: require('~/static/img/skill/icon1.png'),
+        img: require('~/static/img/skill/problem_solving.png'),
         title: 'Problem Solving',
-        text: 'I love programming because of this trait. Finding a problem and overcoming this obstacle makes programming fun.'
+        text: 'For me this is the best trait for a backend developer. Finding a problem and overcoming this obstacle makes programming fun.',
+        subText: 'A common way to solve a problem is by going from simplicity to complexity but what makes more thrilling is reverting from complexity to simplicity. This will make your codes simple, readable, and maintainable.'
       },
       {
-        img: require('~/static/img/skill/icon2.png'),
+        img: require('~/static/img/skill/empathy.png'),
         title: 'Empathy',
-        text: 'if you understand the feeling of someone your actions and the way you make an application will be wise and discerning. So if there is someone in need I will see if I have the ability to carry some of their burden.'
+        text: 'Empathy is linked to intelligence. If you understand and share the feeling of your users, you will be wise and discerning in the making of application. For me the is the best trait for frontend developer'
       },
       {
-        img: require('~/static/img/skill/icon3.png'),
+        img: require('~/static/img/skill/team_work.png'),
         title: 'Teamwork',
         text: 'I believe that sharing information, collaborating, asking questions and helping if there is a problem will lead the team to success.'
       },
-
       {
-        img: require('~/static/img/skill/icon4.png'),
-        title: 'Respectfulness',
-        text: 'What I hate the most in the workplace is the toxic employees. As long as I show respect, then the other party would definitely be affected by my respectful manners, this also helps me balance the factor in a workplace.'
+        img: require('~/static/img/skill/innovation.png'),
+        title: 'Innovation',
+        text: 'As long as I always open to new things and ideas, opportunities will arise. Sometimes, these new strange ideas are essential for pioneering achievements.'
       },
       {
-        img: require('~/static/img/skill/icon5.png'),
+        img: require('~/static/img/skill/time_management.png'),
         title: 'Time Management',
-        text: 'Organizing and planning my time, helps me reduce stress at work. Setting a time frame for my tasks can increase my productivity and a sense of direction in my work.'
+        text: 'Organizing and planning time, helps me reduce stress at work. Setting a time frame for my tasks can increase my productivity and a sense of direction in my work.'
       },
       {
-        img: require('~/static/img/skill/icon6.png'),
+        img: require('~/static/img/skill/perseverance.png'),
         title: 'Self-improvement & Perseverance',
-        text: 'For me as a programmer, this is the most important trait of all.'
+        text: 'For me as a developer, this is the most important trait of all.'
       }
     ]
   })
