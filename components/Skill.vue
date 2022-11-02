@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <v-row class="d-flex justify-content-center">
+      <v-row justify="center">
         <v-col v-for="(skill, i) in skills" :key="i" cols="12" md="4">
           <div
             data-aos="flip-left"
@@ -36,7 +36,7 @@
                   shaped
                   :elevation="hover ? 10 : 4"
                   :class="{ up: hover }"
-                  :height="$vuetify.breakpoint.lgAndUp ? '350px': ''"
+                  :min-height="$vuetify.breakpoint.lgAndUp ? '390px' : ''"
                 >
                   <v-img
                     :src="skill.img"
@@ -52,6 +52,30 @@
                       {{ skill.text }}
                     </p>
                   </v-card-text>
+
+                  <div v-if="skill.subText">
+                    <v-card-actions>
+                      <v-spacer />
+
+                      <v-btn icon color="primary" @click="skill.show = !skill.show">
+                        <v-icon>
+                          {{
+                            skill.show ? "mdi-chevron-up" : "mdi-chevron-down"
+                          }}
+                        </v-icon>
+                      </v-btn>
+                    </v-card-actions>
+
+                    <v-expand-transition>
+                      <div v-show="skill.show">
+                        <v-divider />
+
+                        <v-card-text>
+                          {{ skill.subText }}
+                        </v-card-text>
+                      </div>
+                    </v-expand-transition>
+                  </div>
                 </v-card>
               </div>
             </v-hover>
@@ -74,12 +98,19 @@ export default {
         img: require('~/static/img/skill/problem_solving.png'),
         title: 'Problem Solving',
         text: 'For me this is the best trait for a backend developer. Finding a problem and overcoming this obstacle makes programming fun.',
-        subText: 'A common way to solve a problem is by going from simplicity to complexity but what makes more thrilling is reverting from complexity to simplicity. This will make your codes simple, readable, and maintainable.'
+        subText:
+          'A common way to solve a problem is, by going from simplicity to complexity but what makes more thrilling is reverting from complexity to simplicity. This will make your codes simple, readable, and maintainable.',
+        show: false
       },
       {
         img: require('~/static/img/skill/empathy.png'),
         title: 'Empathy',
-        text: 'Empathy is linked to intelligence. If you understand and share the feeling of your users, you will be wise and discerning in the making of application. For me the is the best trait for frontend developer'
+        text: 'Empathy is linked to intelligence. From my perspective this is the best trait for frontend developer. If you understand and share the feeling of your users, you will be wise and discerning in making a system flow of your applications.'
+      },
+      {
+        img: require('~/static/img/skill/time_management.png'),
+        title: 'Time Management',
+        text: 'Organizing and planning time, helps me reduce stress at work. Setting a time frame for my tasks can increase my productivity and a sense of direction in my work.'
       },
       {
         img: require('~/static/img/skill/team_work.png'),
@@ -89,17 +120,15 @@ export default {
       {
         img: require('~/static/img/skill/innovation.png'),
         title: 'Innovation',
-        text: 'As long as I always open to new things and ideas, opportunities will arise. Sometimes, these new strange ideas are essential for pioneering achievements.'
+        text: 'As long as I always open to new things and ideas, opportunities will arise. I like innovation because sometimes, these new strange ideas are essential for pioneering achievements.'
       },
-      {
-        img: require('~/static/img/skill/time_management.png'),
-        title: 'Time Management',
-        text: 'Organizing and planning time, helps me reduce stress at work. Setting a time frame for my tasks can increase my productivity and a sense of direction in my work.'
-      },
+
       {
         img: require('~/static/img/skill/perseverance.png'),
         title: 'Self-improvement & Perseverance',
-        text: 'For me as a developer, this is the most important trait of all.'
+        text: 'Technology is evolving everyday, so if I keep stagnant or dont want to improve anymore, then I will be left behind by this fast paced world. So self-emprovement is a must.',
+        subText: 'Every time when I developing a project there is always a challenge that needs to be solved. If it does not work the first time, I will do it a second time, If I fail again, then I will go for the third, as long as a I perservere, I will see results.',
+        show: false
       }
     ]
   })

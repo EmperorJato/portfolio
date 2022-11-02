@@ -24,7 +24,7 @@
             I'm Steto <span class="primary--text">Javellana</span>
           </div>
           <p class="title">
-            A junior developer passionate about creating business web
+            A junior back-end developer passionate about creating a business web
             applications from Bacolod City,
             <span class="primary--text">Philippines</span>
           </p>
@@ -55,11 +55,10 @@
               color="white"
               outlined
               class="mt-2"
-              href="/files/CV_STETO_JAVELLANA.docx"
+              href="/CV_STETO_JAVELLANA.docx"
               download
             >
               <span class="primary--text">
-
                 Download CV
               </span>
             </v-btn>

@@ -22,19 +22,23 @@
 
       <v-row>
         <v-col cols="12" md="5">
-          <h3 class="subtitle-1 my-3">
-            Let's talk about everything.<br>Please feel free to contact me if
-            you are interested in hiring me.
-          </h3>
-          <span class="subtitle-1 mt-3"> Contact Number: </span>
-          <p class="subtitle-1">
-            +639275371519
-          </p>
-          <span class="subtitle-1 mt-3"> Email: </span>
-          <p class="subtitle-1">
-            stetojavellana01@gmail.com
-          </p>
-          <v-img src="#" class="d-block ml-auto mr-auto mt-6" />
+          <div class="subtitle-1">
+            <p data-aos="fade-right">
+              Please let me know if you have any suitable position for me.
+            </p>
+            <p class="mt-3" data-aos="fade-right">
+              Contact Number:
+            </p>
+            <div data-aos="fade-left">
+              +639275371519
+            </div>
+            <p class="mt-3" data-aos="fade-right">
+              Email:
+            </p>
+            <div data-aos="fade-left">
+              javellanasteto99@gmail.com
+            </div>
+          </div>
         </v-col>
         <v-col cols="12" md="7">
           <v-form
