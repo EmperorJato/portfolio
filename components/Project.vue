@@ -7,7 +7,7 @@
         data-aos-duration="4000"
       >
         <v-icon color="primary" left>
-          {{ icons.mdiAccountDetails }}
+          {{ icons.mdiFolder }}
         </v-icon>
         <div class="section-title">
           Handling with
@@ -144,13 +144,13 @@
 </template>
 
 <script>
-import { mdiAccountDetails } from '@mdi/js'
+import { mdiFolder } from '@mdi/js'
 export default {
   name: 'Project',
   data: () => ({
     overlay: false,
     icons: {
-      mdiAccountDetails
+      mdiFolder
     },
     projects: [
       {

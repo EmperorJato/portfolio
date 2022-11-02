@@ -75,7 +75,7 @@
 <script>
 import {
   mdiHome,
-  mdiStarCircleOutline,
+  mdiAccountTie,
   mdiFolder,
   mdiAccountDetails,
   mdiCardAccountMail,
@@ -101,9 +101,9 @@ export default {
     },
     links: [
       [mdiHome, 'Home', '#homeSection'],
-      [mdiStarCircleOutline, 'Projects', '#projectSection'],
-      [mdiFolder, 'Experience', '#experienceSection'],
-      [mdiAccountDetails, 'About', '#aboutSection'],
+      [mdiAccountDetails, 'Skill', '#skillSection'],
+      [mdiAccountTie, 'About', '#aboutSection'],
+      [mdiFolder, 'Projects', '#projectSection'],
       [mdiCardAccountMail, 'Contact', '#contactSection']
     ]
   }),

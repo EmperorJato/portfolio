@@ -8,7 +8,7 @@
           data-aos-duration="4000"
         >
           <v-icon color="primary" left>
-            {{ icons.mdiAccountDetails }}
+            {{ icons.mdiAccountTie }}
           </v-icon>
           <div class="section-title">
             My Services and Experience
@@ -87,12 +87,12 @@
 </template>
 
 <script>
-import { mdiAccountDetails, mdiCheckBold } from '@mdi/js'
+import { mdiAccountTie, mdiCheckBold } from '@mdi/js'
 export default {
   name: 'About',
   data: () => ({
     icons: {
-      mdiAccountDetails,
+      mdiAccountTie,
       mdiCheckBold
     },
     stacks: [
