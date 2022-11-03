@@ -55,7 +55,7 @@
               color="white"
               outlined
               class="mt-2"
-              href="/CV_STETO_JAVELLANA.docx"
+              href="/CV_STETO_JAVELLANA.pdf"
               download
             >
               <span class="primary--text">
