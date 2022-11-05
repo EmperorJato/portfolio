@@ -25,8 +25,8 @@
         <v-btn text @click="$vuetify.goTo('#skillSection')">
           <span class="mr-2">Skill</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#aboutSection')">
-          <span class="mr-2">About</span>
+        <v-btn text @click="$vuetify.goTo('#serviceSection')">
+          <span class="mr-2">Service</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#projectSection')">
           <span class="mr-2">Project</span>
@@ -102,7 +102,7 @@ export default {
     links: [
       [mdiHome, 'Home', '#homeSection'],
       [mdiAccountDetails, 'Skill', '#skillSection'],
-      [mdiAccountTie, 'About', '#aboutSection'],
+      [mdiAccountTie, 'Service', '#serviceSection'],
       [mdiFolder, 'Projects', '#projectSection'],
       [mdiCardAccountMail, 'Contact', '#contactSection']
     ]

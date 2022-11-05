@@ -1,20 +1,14 @@
 <template>
-  <v-app v-cloak>
+  <v-app>
     <Navigation :color="color" :flat="flat" />
     <v-main>
-      <v-container fluid fill-height>
-        <v-row justify="center">
-          <v-col cols="12" md="10">
-            <Nuxt />
-            <div v-if="show">
-              <Skill />
-              <About />
-              <Project />
-              <Contact />
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
+      <Nuxt />
+      <div v-if="show">
+        <Skill />
+        <Service />
+        <Project />
+        <Contact />
+      </div>
     </v-main>
     <Footer />
     <v-scale-transition>
@@ -54,7 +48,7 @@ export default {
   watch: {
     fab (val) {
       if (val) {
-        this.color = '#23262D'
+        this.color = '#1b1b1b'
         this.flat = false
       } else {
         this.color = 'transparent'
@@ -88,7 +82,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

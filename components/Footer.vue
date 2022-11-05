@@ -1,6 +1,6 @@
 <template>
-  <v-footer color="#23262D">
-    <v-card flat tile class="white--text text-center" color="#23262D">
+  <v-footer color="#1b1b1b" class="pt-0">
+    <v-card flat tile class="white--text text-center" color="#1b1b1b">
       <v-card-text>
         <v-btn
           v-for="(icon, i) in icons"

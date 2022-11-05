@@ -1,85 +1,95 @@
 <template>
   <section id="skillSection">
     <v-container fluid>
-      <div class="align-start mb-10">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="4000"
-          class="d-flex align-center"
-        >
-          <v-icon color="primary" left>
-            {{ icons.mdiAccountDetails }}
-          </v-icon>
-          <div class="section-title">
-            My Personal Attributes
-          </div>
-        </div>
-        <div data-aos="fade-right" data-aos-duration="2000">
-          <div class="headline font-weight-bold">
-            Soft <span class="primary--text">Skill</span>
-          </div>
-        </div>
-      </div>
-      <v-row justify="center">
-        <v-col v-for="(skill, i) in skills" :key="i" cols="12" md="4">
-          <div
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="6000"
-            :data-aos-delay="100 * i"
-          >
-            <v-hover v-slot="{ hover }">
-              <div>
-                <v-card
-                  dark
-                  class="card text-center"
-                  shaped
-                  :elevation="hover ? 10 : 4"
-                  :class="{ up: hover }"
-                  :min-height="$vuetify.breakpoint.lgAndUp ? '390px' : ''"
-                >
-                  <v-img
-                    :src="skill.img"
-                    max-width="100px"
-                    class="d-block ml-auto mr-auto"
-                    :class="{ 'zoom-efect': hover }"
-                  />
-                  <div class="title font-weight-bold mb-2">
-                    {{ skill.title }}
-                  </div>
-                  <v-card-text class="body-1">
-                    <p>
-                      {{ skill.text }}
-                    </p>
-                  </v-card-text>
-
-                  <div v-if="skill.subText">
-                    <v-card-actions>
-                      <v-spacer />
-
-                      <v-btn icon color="primary" @click="skill.show = !skill.show">
-                        <v-icon>
-                          {{
-                            skill.show ? "mdi-chevron-up" : "mdi-chevron-down"
-                          }}
-                        </v-icon>
-                      </v-btn>
-                    </v-card-actions>
-
-                    <v-expand-transition>
-                      <div v-show="skill.show">
-                        <v-divider />
-
-                        <v-card-text>
-                          {{ skill.subText }}
-                        </v-card-text>
-                      </div>
-                    </v-expand-transition>
-                  </div>
-                </v-card>
+      <v-row align="center" justify="center">
+        <v-col cols="12" md="10">
+          <div class="align-start mb-10">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="4000"
+              class="d-flex align-center"
+            >
+              <v-icon color="primary" left>
+                {{ icons.mdiAccountDetails }}
+              </v-icon>
+              <div class="section-title">
+                My Personal Attributes
               </div>
-            </v-hover>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="2000">
+              <div class="headline font-weight-bold">
+                Soft <span class="primary--text">Skill</span>
+              </div>
+            </div>
           </div>
+          <v-row justify="center">
+            <v-col v-for="(skill, i) in skills" :key="i" cols="12" md="4">
+              <div
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="6000"
+                :data-aos-delay="100 * i"
+              >
+                <v-hover v-slot="{ hover }">
+                  <div>
+                    <v-card
+                      dark
+                      class="card text-center"
+                      shaped
+                      :elevation="hover ? 10 : 4"
+                      :class="{ up: hover }"
+                      :min-height="$vuetify.breakpoint.lgAndUp ? '390px' : ''"
+                    >
+                      <v-img
+                        :src="skill.img"
+                        max-width="100px"
+                        class="d-block ml-auto mr-auto"
+                        :class="{ 'zoom-efect': hover }"
+                      />
+                      <div class="title font-weight-bold mb-2">
+                        {{ skill.title }}
+                      </div>
+                      <v-card-text class="body-1">
+                        <p>
+                          {{ skill.text }}
+                        </p>
+                      </v-card-text>
+
+                      <div v-if="skill.subText">
+                        <v-card-actions>
+                          <v-spacer />
+
+                          <v-btn
+                            icon
+                            color="primary"
+                            @click="skill.show = !skill.show"
+                          >
+                            <v-icon>
+                              {{
+                                skill.show
+                                  ? "mdi-chevron-up"
+                                  : "mdi-chevron-down"
+                              }}
+                            </v-icon>
+                          </v-btn>
+                        </v-card-actions>
+
+                        <v-expand-transition>
+                          <div v-show="skill.show">
+                            <v-divider />
+
+                            <v-card-text>
+                              {{ skill.subText }}
+                            </v-card-text>
+                          </div>
+                        </v-expand-transition>
+                      </div>
+                    </v-card>
+                  </div>
+                </v-hover>
+              </div>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-container>
@@ -127,7 +137,8 @@ export default {
         img: require('~/static/img/skill/perseverance.png'),
         title: 'Self-improvement & Perseverance',
         text: 'Technology is evolving everyday, so if I keep stagnant or dont want to improve anymore, then I will be left behind by this fast paced world. So self-emprovement is a must.',
-        subText: 'Every time when I developing a project there is always a challenge that needs to be solved. If it does not work the first time, I will do it a second time, If I fail again, then I will go for the third, as long as a I perservere, I will see results.',
+        subText:
+          'Every time when I developing a project there is always a challenge that needs to be solved. If it does not work the first time, I will do it a second time, If I fail again, then I will go for the third, as long as a I perservere, I will see results.',
         show: false
       }
     ]
@@ -158,4 +169,5 @@ export default {
   transform: translateY(-20px);
   transition: 0.2s ease-out;
 }
+
 </style>
