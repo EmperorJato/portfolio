@@ -132,7 +132,7 @@ export default {
       {
         img: require('~/static/img/skill/perseverance.png'),
         title: 'Self-improvement & Perseverance',
-        text: 'As a developer this is the most importnant trait of all. Technology is evolving everday so I need to adapt. Even how bitterly the process of improvement is, I must never stop self-improving.',
+        text: 'As a developer this is the most important trait of all. Technology is evolving everday so I need to adapt. Even how bitterly the process of improvement is, I must never stop self-improving.',
         subText:
           'Self-improvement is really hard for me due to lack of talent. Only by hardwork and perseverance can make me further from this self-improvement. If it doesn`t work the first time, I will do it a second time. If I fail again, then go for the third. As long as I persevere, I will see results.',
         show: false
