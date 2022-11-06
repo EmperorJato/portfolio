@@ -2,7 +2,7 @@
   <section id="skillSection">
     <v-container fluid>
       <v-row align="center" justify="center">
-        <v-col cols="12" md="10">
+        <v-col cols="12" md="10" xl="8">
           <div class="align-start mb-10">
             <div
               data-aos="fade-right"
@@ -49,16 +49,12 @@
                       <div class="title font-weight-bold mb-2">
                         {{ skill.title }}
                       </div>
-                      <v-card-text class="body-1">
+                      <v-card-text class="body-1 pb-0">
                         <p>
                           {{ skill.text }}
                         </p>
-                      </v-card-text>
 
-                      <div v-if="skill.subText">
-                        <v-card-actions>
-                          <v-spacer />
-
+                        <div v-if="skill.subText" class="my-0">
                           <v-btn
                             icon
                             color="primary"
@@ -67,23 +63,23 @@
                             <v-icon>
                               {{
                                 skill.show
-                                  ? "mdi-chevron-up"
-                                  : "mdi-chevron-down"
+                                  ? "mdi-chevron-double-up"
+                                  : "mdi-chevron-double-down"
                               }}
                             </v-icon>
                           </v-btn>
-                        </v-card-actions>
 
-                        <v-expand-transition>
-                          <div v-show="skill.show">
-                            <v-divider />
+                          <v-expand-transition>
+                            <div v-show="skill.show">
+                              <v-divider />
 
-                            <v-card-text>
-                              {{ skill.subText }}
-                            </v-card-text>
-                          </div>
-                        </v-expand-transition>
-                      </div>
+                              <v-card-text>
+                                {{ skill.subText }}
+                              </v-card-text>
+                            </div>
+                          </v-expand-transition>
+                        </div>
+                      </v-card-text>
                     </v-card>
                   </div>
                 </v-hover>
@@ -115,7 +111,7 @@ export default {
       {
         img: require('~/static/img/skill/empathy.png'),
         title: 'Empathy',
-        text: 'Empathy is linked to intelligence. From my perspective this is the best trait for frontend developer. If you understand and share the feeling of your users, you will be wise and discerning in making a system flow of your applications.'
+        text: 'Empathy is linked to intelligence. From my perspective this is the best trait for frontend developer. If I understand and share the feeling of my users. With sincere emphathy, I will be wise and discerning in devloping a user-friendly applications.'
       },
       {
         img: require('~/static/img/skill/time_management.png'),
@@ -136,9 +132,9 @@ export default {
       {
         img: require('~/static/img/skill/perseverance.png'),
         title: 'Self-improvement & Perseverance',
-        text: 'Technology is evolving everyday, so if I keep stagnant or dont want to improve anymore, then I will be left behind by this fast paced world. So self-emprovement is a must.',
+        text: 'As a developer this is the most importnant trait of all. Technology is evolving everday so I need to adapt. Even how bitterly the process of improvement is, I must never stop self-improving.',
         subText:
-          'Every time when I developing a project there is always a challenge that needs to be solved. If it does not work the first time, I will do it a second time, If I fail again, then I will go for the third, as long as a I perservere, I will see results.',
+          'Self-improvement is really hard for me due to lack of talent. Only by hardwork and perseverance can make me further from this self-improvement. If it doesn`t work the first time, I will do it a second time. If I fail again, then go for the third. As long as I persevere, I will see results.',
         show: false
       }
     ]
@@ -169,5 +165,4 @@ export default {
   transform: translateY(-20px);
   transition: 0.2s ease-out;
 }
-
 </style>

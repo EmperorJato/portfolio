@@ -2,7 +2,7 @@
   <section id="serviceSection" data-background="#23262D" class="section">
     <v-container fluid>
       <v-row align="center" justify="center">
-        <v-col cols="12" md="10">
+        <v-col cols="12" md="10" xl="8">
           <div class="align-start mb-10">
             <div
               class="d-flex align-center"

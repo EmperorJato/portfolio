@@ -1,99 +1,104 @@
 <template>
   <section id="contactSection">
     <v-container fluid>
-      <div
-        class="d-flex align-center"
-        data-aos="fade-right"
-        data-aos-duration="4000"
-      >
-        <v-icon color="primary" left>
-          {{ icons.mdiCardAccountMail }}
-        </v-icon>
-        <div class="section-title">
-          GET IN TOUCH WITH ME
-        </div>
-      </div>
-
-      <div data-aos="fade-right" data-aos-duration="2000">
-        <div class="headline font-weight-bold mb-5">
-          Cont<span class="primary--text">act</span>
-        </div>
-      </div>
-
-      <v-row>
-        <v-col cols="12" md="5">
-          <div class="subtitle-1">
-            <p data-aos="fade-right">
-              Please let me know if you have any suitable position for me.
-            </p>
-            <p class="mt-3" data-aos="fade-right">
-              Contact Number:
-            </p>
-            <div data-aos="fade-left">
-              +639275371519
-            </div>
-            <p class="mt-3" data-aos="fade-right">
-              Email:
-            </p>
-            <div data-aos="fade-left">
-              javellanasteto99@gmail.com
+      <v-row align="center" justify="center">
+        <v-col cols="12" md="10" xl="8">
+          <div
+            class="d-flex align-center"
+            data-aos="fade-right"
+            data-aos-duration="4000"
+          >
+            <v-icon color="primary" left>
+              {{ icons.mdiCardAccountMail }}
+            </v-icon>
+            <div class="section-title">
+              GET IN TOUCH WITH ME
             </div>
           </div>
-        </v-col>
-        <v-col cols="12" md="7">
-          <v-form
-            ref="form"
-            v-model="valid"
-            lazy-validation
-            aria-autocomplete="off"
-            @submit.prevent="submit"
-          >
-            <v-text-field
-              v-model="form.name"
-              outlined
-              label="Name"
-              required
-              :rules="rules.name"
-              :prepend-inner-icon="icons.mdiAccount"
-            />
 
-            <v-text-field
-              v-model="form.email"
-              outlined
-              label="Email"
-              required
-              type="email"
-              :rules="rules.email"
-              :prepend-inner-icon="icons.mdiEmail"
-              background-color="none"
-            />
+          <div data-aos="fade-right" data-aos-duration="2000">
+            <div class="headline font-weight-bold mb-5">
+              Cont<span class="primary--text">act</span>
+            </div>
+          </div>
 
-            <v-textarea
-              v-model="form.message"
-              outlined
-              label="Message"
-              required
-              rows="4"
-              row-height="30"
-              :rules="rules.message"
-              :prepend-inner-icon="icons.mdiCommentText"
-            />
-            <v-btn
-              :disabled="!valid"
-              color="primary"
-              rounded
-              block
-              type="submit"
-              :loading="loading"
-            >
-              <v-icon left>
-                {{ icons.mdiSend }}
-              </v-icon>
-              Send Message
-            </v-btn>
-          </v-form>
+          <v-row>
+            <v-col cols="12" md="5">
+              <div class="subtitle-1">
+                <p data-aos="fade-right">
+                  Please let me know if you have any suitable position for me.
+                </p>
+                <p class="mt-3" data-aos="fade-right">
+                  Contact Number:
+                </p>
+                <div data-aos="fade-left">
+                  +639275371519
+                </div>
+                <p class="mt-3" data-aos="fade-right">
+                  Email:
+                </p>
+                <div data-aos="fade-left">
+                  javellanasteto99@gmail.com
+                </div>
+              </div>
+            </v-col>
+            <v-col cols="12" md="7">
+              <v-form
+                ref="form"
+                v-model="valid"
+                lazy-validation
+                aria-autocomplete="off"
+                @submit.prevent="submit"
+              >
+                <v-text-field
+                  v-model="form.name"
+                  outlined
+                  label="Name"
+                  required
+                  :rules="rules.name"
+                  :prepend-inner-icon="icons.mdiAccount"
+                />
+
+                <v-text-field
+                  v-model="form.email"
+                  outlined
+                  label="Email"
+                  required
+                  type="email"
+                  :rules="rules.email"
+                  :prepend-inner-icon="icons.mdiEmail"
+                  background-color="none"
+                />
+
+                <v-textarea
+                  v-model="form.message"
+                  outlined
+                  label="Message"
+                  required
+                  rows="4"
+                  row-height="30"
+                  :rules="rules.message"
+                  :prepend-inner-icon="icons.mdiCommentText"
+                />
+                <v-btn
+                  :disabled="!valid"
+                  color="primary"
+                  rounded
+                  block
+                  type="submit"
+                  :loading="loading"
+                >
+                  <v-icon left>
+                    {{ icons.mdiSend }}
+                  </v-icon>
+                  Send Message
+                </v-btn>
+              </v-form>
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
+
       <div class="mt-16">
         <div class="waves wave-1" />
         <div class="waves wave-2" />

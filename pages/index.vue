@@ -1,8 +1,8 @@
 <template>
-  <section id="homeSection">
+  <section id="homeSection" :class="$vuetify.breakpoint.smAndDown ? 'pt-16' : ''">
     <v-container fluid>
       <v-row align="center" justify="center">
-        <v-col cols="12" md="10">
+        <v-col cols="12" md="10" xl="8">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6">
               <div class="d-flex align-center mb-5">
@@ -26,7 +26,7 @@
                 I'm Steto <span class="primary--text">Javellana</span>
               </div>
               <p class="title">
-                A junior back-end developer passionate about creating a business web
+                A back-end developer passionate about creating a business web
                 applications from Bacolod City,
                 <span class="primary--text">Philippines</span>
               </p>
