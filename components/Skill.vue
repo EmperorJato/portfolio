@@ -105,7 +105,7 @@ export default {
         title: 'Problem Solving',
         text: 'For me this is the best trait for a backend developer. Finding a problem and overcoming this obstacle makes programming fun.',
         subText:
-          'A common way to solve a problem is, by going from simplicity to complexity but what makes more thrilling is reverting from complexity to simplicity. This will make your codes readable and maintainable.',
+          'A common way to solve a problem is, by going from simplicity to complexity but what makes me more excited is reverting it from complexity to simplicity. This will make my codes readable and maintainable.',
         show: false
       },
       {
