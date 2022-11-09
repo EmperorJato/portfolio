@@ -73,15 +73,6 @@
                 @submit.prevent="submit"
               >
                 <v-text-field
-                  v-model="form.name"
-                  outlined
-                  label="Name"
-                  required
-                  :rules="rules.name"
-                  :prepend-inner-icon="icons.mdiAccount"
-                />
-
-                <v-text-field
                   v-model="form.email"
                   outlined
                   label="Email"
@@ -133,7 +124,6 @@
 
 <script>
 import {
-  mdiAccount,
   mdiEmail,
   mdiCommentText,
   mdiSend,
@@ -149,7 +139,6 @@ export default {
     },
     loading: false,
     icons: {
-      mdiAccount,
       mdiEmail,
       mdiCommentText,
       mdiSend,
@@ -157,12 +146,10 @@ export default {
     },
     valid: true,
     form: {
-      name: '',
       email: '',
       message: ''
     },
     rules: {
-      name: [v => !!v || 'Name is required'],
       email: [
         v => !!v || 'Email is required',
         v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
