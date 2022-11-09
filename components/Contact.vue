@@ -43,6 +43,28 @@
               </div>
             </v-col>
             <v-col cols="12" md="7">
+              <v-alert
+                v-model="alert.show"
+                dismissible
+                color="success"
+                border="left"
+                elevation="2"
+                colored-border
+                icon="mdi-email-check"
+                prominent
+                transition="scroll-x-reverse-transition"
+              >
+                <div class="px-3">
+                  <div class="font-weight-bold text-subtitle-2 text-sm-subtitle-1">
+                    {{ alert.title }}
+                  </div>
+                  <div class="caption">
+                    {{ alert.text }}
+                  </div>
+                </div>
+
+                </h5>
+              </v-alert>
               <v-form
                 ref="form"
                 v-model="valid"
@@ -120,6 +142,11 @@ import {
 export default {
   name: 'Contact',
   data: () => ({
+    alert: {
+      show: false,
+      title: '',
+      text: ''
+    },
     loading: false,
     icons: {
       mdiAccount,
@@ -146,7 +173,29 @@ export default {
           (v && v.length >= 10) || 'Message must be greater than 10 characters'
       ]
     }
-  })
+  }),
+  methods: {
+    async submit () {
+      this.loading = true
+      try {
+        if (this.$refs.form.validate()) {
+          await this.$fire.firestore.collection('contact').add(this.form).then((res) => {
+            this.alert = {
+              show: true,
+              title: 'Thank you for contacting me',
+              text: 'Your message is important to me and I will respond as soon as possible. Thank You!'
+            }
+
+            this.$refs.form.reset()
+          })
+        }
+      } catch (err) {
+        console.log(err)
+      } finally {
+        this.loading = false
+      }
+    }
+  }
 }
 </script>
 
@@ -160,4 +209,11 @@ export default {
   background-position: center;
   z-index: 0;
 } */
+
+.v-alert {
+  position: fixed;
+  top: 15%;
+  right: 2%;
+  margin: 0 auto;
+}
 </style>

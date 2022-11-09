@@ -50,6 +50,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/firebase'
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -73,5 +74,22 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  firebase: {
+    config: {
+      apiKey: "AIzaSyBL0TuPCAd9D2TIxgaWTwp4fyZcQbBFHi4",
+      authDomain: "portfolio-9699c.firebaseapp.com",
+      projectId: "portfolio-9699c",
+      storageBucket: "portfolio-9699c.appspot.com",
+      messagingSenderId: "767997625487",
+      appId: "1:767997625487:web:66db7e5401d59ea0585cfa",
+      measurementId: "G-71KJ86SB98"
+    },
+    services: {
+      auth: true,
+      firestore: true
+    }
+ }
+
 }
