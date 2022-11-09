@@ -34,7 +34,7 @@
                 <v-btn
                   color="primary"
                   class="white--text mr-2 mt-2"
-                  href="https://www.linkedin.com/in/steto-javellana-863038245/"
+                  href="https://www.linkedin.com/in/steto-javellana-394933255/"
                   target="_blank"
                 >
                   <v-icon dark>
