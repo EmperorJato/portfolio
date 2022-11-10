@@ -45,7 +45,7 @@
                 <v-btn
                   color="primary"
                   class="white--text mr-2 mt-2"
-                  href="https://github.com/EmperorJato?tab=repositories"
+                  href="https://github.com/EmperorJato"
                   target="_blank"
                 >
                   <v-icon dark>
