@@ -111,7 +111,7 @@ export default {
       {
         img: require('~/static/img/skill/empathy.png'),
         title: 'Empathy',
-        text: 'Empathy is linked to intelligence. From my perspective this is the best trait for frontend developer. If I understand and share the feeling of my users. With sincere emphathy, I will be wise and discerning in devloping a user-friendly applications.'
+        text: 'Empathy is linked to intelligence. From my perspective this is the best trait for frontend developer. If I understand and share the feeling of my users. With sincere emphathy, I will be wise and discerning in developing a user-friendly applications.'
       },
       {
         img: require('~/static/img/skill/time_management.png'),
