@@ -35,44 +35,42 @@
             <v-col cols="12" sm="8" class="text-end">
               <v-row justify="end">
                 <v-col cols="12" md="8">
-                  <div data-aos="fade-left" data-aos-delay="600">
-                    <v-card class="mt-8 text-center">
-                      <v-sheet
-                        class="
-                          v-sheet--offset
-                          mx-auto
-                          d-flex
-                          align-center
-                          justify-center
-                          py-3
-                        "
-                        color="cyan"
-                        elevation="12"
-                        max-width="65%"
-                        dark
-                      >
-                        <div class="text-center">
-                          <div class="font-weight-medium text-overline">
-                            {{ frontend.title }}
-                          </div>
+                  <v-card class="mt-8 text-center">
+                    <v-sheet
+                      class="
+                        v-sheet--offset
+                        mx-auto
+                        d-flex
+                        align-center
+                        justify-center
+                        py-3
+                      "
+                      color="cyan"
+                      elevation="12"
+                      max-width="65%"
+                      dark
+                    >
+                      <div class="text-center">
+                        <div class="font-weight-medium text-overline">
+                          {{ frontend.title }}
                         </div>
-                      </v-sheet>
+                      </div>
+                    </v-sheet>
 
-                      <v-card-text class="text-subtitle-1 font-weight-medium">
-                        {{ frontend.subTitle }}
-                      </v-card-text>
-                      <v-card-text class="body-1 pt-6 pb-12">
-                        <div v-for="(items, i) in frontend.experience" :key="i">
-                          <p data-aos="fade-left" :data-aos-delay="600 * i">
-                            <v-icon color="success" left>
-                              {{ icons.mdiCheckBold }}
-                            </v-icon>
-                            {{ items }}
-                          </p>
-                        </div>
-                      </v-card-text>
-                    </v-card>
-                  </div>
+                    <v-card-text class="text-subtitle-1 font-weight-medium">
+                      {{ frontend.subTitle }}
+                    </v-card-text>
+                    <v-card-text class="body-1 pt-6 pb-12">
+                      <div v-for="(items, i) in frontend.experience" :key="i">
+                        <p data-aos="fade-left" :data-aos-delay="600 * i">
+                          <v-icon color="success" left>
+                            {{ icons.mdiCheckBold }}
+                          </v-icon>
+                          {{ items }}
+                        </p>
+                      </div>
+                    </v-card-text>
+                  </v-card>
                 </v-col>
               </v-row>
             </v-col>
@@ -90,44 +88,42 @@
             <v-col cols="12" sm="8" class="text-end">
               <v-row justify="end">
                 <v-col cols="12" md="8">
-                  <div data-aos="fade-left" data-aos-delay="600">
-                    <v-card class="mt-8 text-center">
-                      <v-sheet
-                        class="
-                          v-sheet--offset
-                          mx-auto
-                          d-flex
-                          align-center
-                          justify-center
-                          py-3
-                        "
-                        color="cyan"
-                        elevation="12"
-                        max-width="65%"
-                        dark
-                      >
-                        <div class="text-center">
-                          <div class="font-weight-medium text-overline">
-                            {{ backend.title }}
-                          </div>
+                  <v-card class="mt-8 text-center">
+                    <v-sheet
+                      class="
+                        v-sheet--offset
+                        mx-auto
+                        d-flex
+                        align-center
+                        justify-center
+                        py-3
+                      "
+                      color="cyan"
+                      elevation="12"
+                      max-width="65%"
+                      dark
+                    >
+                      <div class="text-center">
+                        <div class="font-weight-medium text-overline">
+                          {{ backend.title }}
                         </div>
-                      </v-sheet>
+                      </div>
+                    </v-sheet>
 
-                      <v-card-text class="text-subtitle-1 font-weight-medium">
-                        {{ backend.subTitle }}
-                      </v-card-text>
-                      <v-card-text class="body-1 pt-6 pb-12">
-                        <div v-for="(items, i) in backend.experience" :key="i">
-                          <p data-aos="fade-left" :data-aos-delay="600 * i">
-                            <v-icon color="success" left>
-                              {{ icons.mdiCheckBold }}
-                            </v-icon>
-                            {{ items }}
-                          </p>
-                        </div>
-                      </v-card-text>
-                    </v-card>
-                  </div>
+                    <v-card-text class="text-subtitle-1 font-weight-medium">
+                      {{ backend.subTitle }}
+                    </v-card-text>
+                    <v-card-text class="body-1 pt-6 pb-12">
+                      <div v-for="(items, i) in backend.experience" :key="i">
+                        <p data-aos="fade-left" :data-aos-delay="600 * i">
+                          <v-icon color="success" left>
+                            {{ icons.mdiCheckBold }}
+                          </v-icon>
+                          {{ items }}
+                        </p>
+                      </div>
+                    </v-card-text>
+                  </v-card>
                 </v-col>
               </v-row>
             </v-col>
@@ -146,44 +142,42 @@
             <v-col cols="12" sm="8" class="text-end">
               <v-row justify="end">
                 <v-col cols="12" md="8">
-                  <div data-aos="fade-left" data-aos-delay="600">
-                    <v-card class="mt-8 text-center">
-                      <v-sheet
-                        class="
-                          v-sheet--offset
-                          mx-auto
-                          d-flex
-                          align-center
-                          justify-center
-                          py-3
-                        "
-                        color="cyan"
-                        elevation="12"
-                        max-width="65%"
-                        dark
-                      >
-                        <div class="text-center">
-                          <div class="font-weight-medium text-overline">
-                            {{ database.title }}
-                          </div>
+                  <v-card class="mt-8 text-center">
+                    <v-sheet
+                      class="
+                        v-sheet--offset
+                        mx-auto
+                        d-flex
+                        align-center
+                        justify-center
+                        py-3
+                      "
+                      color="cyan"
+                      elevation="12"
+                      max-width="65%"
+                      dark
+                    >
+                      <div class="text-center">
+                        <div class="font-weight-medium text-overline">
+                          {{ database.title }}
                         </div>
-                      </v-sheet>
+                      </div>
+                    </v-sheet>
 
-                      <v-card-text class="text-subtitle-1 font-weight-medium">
-                        {{ database.subTitle }}
-                      </v-card-text>
-                      <v-card-text class="body-1 pt-6 pb-12">
-                        <div v-for="(items, i) in database.experience" :key="i">
-                          <p data-aos="fade-left" :data-aos-delay="600 * i">
-                            <v-icon color="success" left>
-                              {{ icons.mdiCheckBold }}
-                            </v-icon>
-                            {{ items }}
-                          </p>
-                        </div>
-                      </v-card-text>
-                    </v-card>
-                  </div>
+                    <v-card-text class="text-subtitle-1 font-weight-medium">
+                      {{ database.subTitle }}
+                    </v-card-text>
+                    <v-card-text class="body-1 pt-6 pb-12">
+                      <div v-for="(items, i) in database.experience" :key="i">
+                        <p data-aos="fade-left" :data-aos-delay="600 * i">
+                          <v-icon color="success" left>
+                            {{ icons.mdiCheckBold }}
+                          </v-icon>
+                          {{ items }}
+                        </p>
+                      </div>
+                    </v-card-text>
+                  </v-card>
                 </v-col>
               </v-row>
             </v-col>
