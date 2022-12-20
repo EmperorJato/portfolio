@@ -22,68 +22,69 @@
               </div>
             </div>
           </div>
-          <v-row justify="center">
-            <v-col v-for="(skill, i) in skills" :key="i" cols="12" md="4">
-              <div
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="6000"
-                :data-aos-delay="100 * i"
-              >
-                <v-hover v-slot="{ hover }">
-                  <div>
-                    <v-card
-                      dark
-                      class="card text-center"
-                      shaped
-                      :elevation="hover ? 10 : 4"
-                      :class="{ up: hover }"
-                      :min-height="$vuetify.breakpoint.lgAndUp ? '390px' : ''"
-                    >
-                      <v-img
-                        :src="skill.img"
-                        max-width="100px"
-                        class="d-block ml-auto mr-auto"
-                        :class="{ 'zoom-efect': hover }"
-                      />
-                      <div class="title font-weight-bold mb-2">
-                        {{ skill.title }}
-                      </div>
-                      <v-card-text class="body-1 pb-0">
-                        <p>
-                          {{ skill.text }}
-                        </p>
-
-                        <div v-if="skill.subText" class="my-0">
-                          <v-btn
-                            icon
-                            color="primary"
-                            @click="skill.show = !skill.show"
-                          >
-                            <v-icon>
-                              {{
-                                skill.show
-                                  ? "mdi-chevron-double-up"
-                                  : "mdi-chevron-double-down"
-                              }}
-                            </v-icon>
-                          </v-btn>
-
-                          <v-expand-transition>
-                            <div v-show="skill.show">
-                              <v-divider />
-
-                              <v-card-text>
-                                {{ skill.subText }}
-                              </v-card-text>
-                            </div>
-                          </v-expand-transition>
-                        </div>
-                      </v-card-text>
-                    </v-card>
+          <v-row class="d-flex justify-center">
+            <v-col
+              v-for="(skill, i) in skills"
+              :key="i"
+              cols="12"
+              md="4"
+              class="flex-fill"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="6000"
+              :data-aos-delay="100 * i"
+            >
+              <v-hover v-slot="{ hover }">
+                <v-card
+                  dark
+                  class="card text-center"
+                  min-height="100%"
+                  shaped
+                  :elevation="hover ? 10 : 4"
+                  :class="{ up: hover }"
+                >
+                  <v-img
+                    :src="skill.img"
+                    max-width="100px"
+                    class="d-block ml-auto mr-auto"
+                    :class="{ 'zoom-efect': hover }"
+                  />
+                  <div class="title font-weight-bold mb-2">
+                    {{ skill.title }}
                   </div>
-                </v-hover>
-              </div>
+                  <v-card-text class="body-1 pb-0">
+                    <p>
+                      {{ skill.text }}
+                    </p>
+
+                    <div v-if="skill.subText" class="my-0">
+                      <v-btn
+                        icon
+                        color="primary"
+                        @click="skill.show = !skill.show"
+                      >
+                        <v-icon>
+                          {{
+                            skill.show
+                              ? "mdi-chevron-double-up"
+                              : "mdi-chevron-double-down"
+                          }}
+                        </v-icon>
+                      </v-btn>
+
+                      <v-expand-transition>
+                        <div v-show="skill.show">
+                          <v-divider />
+
+                          <v-card-text>
+                            {{ skill.subText }}
+                          </v-card-text>
+                        </div>
+                      </v-expand-transition>
+                    </div>
+                  </v-card-text>
+                </v-card>
+              </v-hover>
             </v-col>
           </v-row>
         </v-col>
@@ -128,13 +129,12 @@ export default {
         title: 'Innovation',
         text: 'As long as I always open to new things and ideas, opportunities will arise. I like innovation because sometimes, these new strange ideas are essential for pioneering achievements.'
       },
-
       {
         img: require('~/static/img/skill/perseverance.png'),
         title: 'Self-improvement & Perseverance',
-        text: 'As a developer this is the most important trait of all. Technology is evolving everday so I need to adapt. Even how bitterly the process of improvement is, I must never stop self-improving.',
+        text: 'As a developer this is the most important trait of all. Technology is evolving everyday. To adapt to these new technologies, I must learn and use them as my advantage, no matter how bitter the process is, I will never stop learning and self-improving.',
         subText:
-          'Self-improvement is really hard for me due to lack of talent. Only by hardwork and perseverance can make me further from this self-improvement. If it doesn`t work the first time, I will do it a second time. If I fail again, then go for the third. As long as I persevere, I will see results.',
+          'Self-improving is really hard for me due to lack of talent. Only by hardworking and persevering can make me further from this self-improvement. I truly believe that as long as I persevere, I will see results.',
         show: false
       }
     ]

@@ -62,8 +62,6 @@
                     {{ alert.text }}
                   </div>
                 </div>
-
-                </h5>
               </v-alert>
               <v-form
                 ref="form"
