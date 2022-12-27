@@ -22,20 +22,16 @@
               </div>
             </div>
           </div>
+
           <!-- frontend -->
-          <v-row justify="center" align="center">
+          <v-row justify="center" align="center" class="vh">
             <v-col cols="12" sm="4" class="hidden-xs-only">
-              <v-img
-                src="/img/service/frontend.svg"
-                class="d-block mx-auto"
-                max-width="350px"
-                min-height="100%"
-              />
+              <v-img id="frontendImage" src="/img/service/frontend.svg" class="service-img" />
             </v-col>
             <v-col cols="12" sm="8" class="text-end">
               <v-row justify="end">
                 <v-col cols="12" md="8">
-                  <v-card class="mt-8 text-center">
+                  <v-card id="frontend" class="text-center service">
                     <v-sheet
                       class="
                         v-sheet--offset
@@ -75,20 +71,16 @@
               </v-row>
             </v-col>
           </v-row>
+
           <!-- backend -->
-          <v-row justify="center" align="center">
+          <v-row justify="center" align="center" class="vh">
             <v-col cols="12" sm="4" class="hidden-xs-only">
-              <v-img
-                src="/img/service/backend.svg"
-                class="d-block mx-auto"
-                max-width="350px"
-                min-height="100%"
-              />
+              <v-img id="backendImage" src="/img/service/backend.svg" class="service-img" />
             </v-col>
             <v-col cols="12" sm="8" class="text-end">
               <v-row justify="end">
                 <v-col cols="12" md="8">
-                  <v-card class="mt-8 text-center">
+                  <v-card id="backend" class="text-center service">
                     <v-sheet
                       class="
                         v-sheet--offset
@@ -130,19 +122,18 @@
           </v-row>
 
           <!-- database -->
-          <v-row justify="center" align="center">
-            <v-col cols="12" sm="4" class="hidden-xs-only">
+          <v-row justify="center" align="center" class="vh">
+            <v-col cols="12" sm="4" class="hidden-sm-only">
               <v-img
+                id="databaseImage"
                 src="/img/service/database.svg"
-                class="d-block mx-auto"
-                max-width="350px"
-                min-height="100%"
+                class="service-img"
               />
             </v-col>
             <v-col cols="12" sm="8" class="text-end">
               <v-row justify="end">
                 <v-col cols="12" md="8">
-                  <v-card class="mt-8 text-center">
+                  <v-card id="database" class="text-center service">
                     <v-sheet
                       class="
                         v-sheet--offset
@@ -234,27 +225,39 @@ export default {
       ]
     }
   }),
+
   mounted () {
-    // const scrollObserver = new IntersectionObserver(
-    //   (entries) => {
-    //     entries.forEach((entry) => {
-    //       if (entry.isIntersecting) {
-    //         const background = entry.target.getAttribute('data-background')
-    //         const id = entry.target.getAttribute('id')
-    //         document.querySelector(`#${id}`).style.background = background
-    //       }
-    //     })
-    //   },
-    //   {
-    //     root: null,
-    //     rootMargin: '0px',
-    //     threshold: 0.95
-    //   }
-    // )
-    // const targets = document.querySelectorAll('.section')
-    // for (const target of targets) {
-    //   scrollObserver.observe(target)
-    // }
+    this.eventObserver()
+  },
+
+  methods: {
+    eventObserver () {
+      const targets = document.querySelectorAll('.service')
+      const scrollObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const frontendImage = document.getElementById('frontendImage')
+            const backendImage = document.getElementById('backendImage')
+            const databaseImage = document.getElementById('databaseImage')
+
+            // const rect = entry.intersectionRect
+            // const elementCenterY = (rect.top + rect.height / 2) / 2
+            // const screenCenterY = window.innerHeight / 2
+
+            frontendImage.classList.toggle('active', entry.isIntersecting && entry.target.id === 'frontend')
+            backendImage.classList.toggle('active', entry.isIntersecting && entry.target.id === 'backend')
+            databaseImage.classList.toggle('active', entry.isIntersecting && entry.target.id === 'database')
+          })
+        },
+        {
+          threshold: 0.4,
+          rootMargin: '-20px 0px -100px'
+        }
+      )
+      for (const target of targets) {
+        scrollObserver.observe(target)
+      }
+    }
   }
 }
 </script>
@@ -264,4 +267,34 @@ export default {
   top: -24px;
   position: relative;
 }
+
+.vh {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-img {
+  visibility: hidden;
+  position: fixed;
+  width: 35%;
+  top: 45%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  filter: blur(30px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: .6s ease, opacity 0.6s ease, background-position .8s ease;
+}
+
+.active {
+   visibility: visible;
+  filter: blur(0);
+  opacity: 1;
+  top: 50%;
+}
+
 </style>

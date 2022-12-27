@@ -143,6 +143,11 @@ export default {
 </script>
 
  <style scoped>
+ #sectionSkill{
+  position: relative;
+  z-index: 1;
+ }
+
 .card {
   padding: 10px;
   transition: 0.5s ease-out;
