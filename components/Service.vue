@@ -25,7 +25,7 @@
 
           <!-- frontend -->
           <v-row justify="center" align="center" class="vh">
-            <v-col cols="12" sm="4" class="hidden-xs-only">
+            <v-col cols="12" sm="4" class="hidden-sm-and-down">
               <v-img id="frontendImage" src="/img/service/frontend.svg" class="service-img" />
             </v-col>
             <v-col cols="12" sm="8" class="text-end">
@@ -74,7 +74,7 @@
 
           <!-- backend -->
           <v-row justify="center" align="center" class="vh">
-            <v-col cols="12" sm="4" class="hidden-xs-only">
+            <v-col cols="12" sm="4" class="hidden-sm-and-down">
               <v-img id="backendImage" src="/img/service/backend.svg" class="service-img" />
             </v-col>
             <v-col cols="12" sm="8" class="text-end">
@@ -123,7 +123,7 @@
 
           <!-- database -->
           <v-row justify="center" align="center" class="vh">
-            <v-col cols="12" sm="4" class="hidden-sm-only">
+            <v-col cols="12" sm="4" class="hidden-sm-and-down">
               <v-img
                 id="databaseImage"
                 src="/img/service/database.svg"
