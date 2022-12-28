@@ -70,7 +70,9 @@ export default {
   },
   methods: {
     onScroll (e) {
-      if (typeof window === 'undefined') { return }
+      if (typeof window === 'undefined') {
+        return
+      }
       const top = window.pageYOffset || e.target.scrollTop || 0
       this.fab = top > 50
     },

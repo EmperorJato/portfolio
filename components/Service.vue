@@ -26,7 +26,11 @@
           <!-- frontend -->
           <v-row justify="center" align="center" class="vh">
             <v-col cols="12" sm="4" class="hidden-sm-and-down">
-              <v-img id="frontendImage" src="/img/service/frontend.svg" class="service-img" />
+              <v-img
+                id="frontendImage"
+                src="/img/service/frontend.svg"
+                class="service-img"
+              />
             </v-col>
             <v-col cols="12" sm="8" class="text-end">
               <v-row justify="end">
@@ -75,7 +79,11 @@
           <!-- backend -->
           <v-row justify="center" align="center" class="vh">
             <v-col cols="12" sm="4" class="hidden-sm-and-down">
-              <v-img id="backendImage" src="/img/service/backend.svg" class="service-img" />
+              <v-img
+                id="backendImage"
+                src="/img/service/backend.svg"
+                class="service-img"
+              />
             </v-col>
             <v-col cols="12" sm="8" class="text-end">
               <v-row justify="end">
@@ -225,7 +233,6 @@ export default {
       ]
     }
   }),
-
   mounted () {
     this.eventObserver()
   },
@@ -244,9 +251,18 @@ export default {
             // const elementCenterY = (rect.top + rect.height / 2) / 2
             // const screenCenterY = window.innerHeight / 2
 
-            frontendImage.classList.toggle('active', entry.isIntersecting && entry.target.id === 'frontend')
-            backendImage.classList.toggle('active', entry.isIntersecting && entry.target.id === 'backend')
-            databaseImage.classList.toggle('active', entry.isIntersecting && entry.target.id === 'database')
+            frontendImage.classList.toggle(
+              'active',
+              entry.isIntersecting && entry.target.id === 'frontend'
+            )
+            backendImage.classList.toggle(
+              'active',
+              entry.isIntersecting && entry.target.id === 'backend'
+            )
+            databaseImage.classList.toggle(
+              'active',
+              entry.isIntersecting && entry.target.id === 'database'
+            )
           })
         },
         {
@@ -287,14 +303,13 @@ export default {
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: .6s ease, opacity 0.6s ease, background-position .8s ease;
+  transition: 0.6s ease, opacity 0.6s ease, background-position 0.8s ease;
 }
 
 .active {
-   visibility: visible;
+  visibility: visible;
   filter: blur(0);
   opacity: 1;
   top: 50%;
 }
-
 </style>
