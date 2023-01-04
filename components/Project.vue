@@ -30,8 +30,14 @@
                   contain
                 >
                   <v-fade-transition>
-                    <v-overlay v-if="hover" absolute color="#424242" z-index="0">
-                      <p class="overline text-center">
+                    <v-overlay
+                      v-if="hover"
+                      absolute
+                      color="#424242"
+                      z-index="0"
+                      class="text-center"
+                    >
+                      <p class="overline">
                         Stacks used
                       </p>
                       <div>
@@ -52,6 +58,9 @@
                           </v-tooltip>
                         </v-avatar>
                       </div>
+                      <v-btn color="primary mt-5">
+                        See more info
+                      </v-btn>
                     </v-overlay>
                   </v-fade-transition>
                 </v-carousel-item>
