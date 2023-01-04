@@ -104,7 +104,7 @@ export default {
       {
         img: require('~/static/img/skill/problem_solving.png'),
         title: 'Problem Solving',
-        text: 'Problem solving is like a challenge, and there is only a sense of accomplishment if there is a challenge. For me this is the best trait for a backend developer. This will hone your critical thinking, efficiency, and logical skills',
+        text: 'Problem solving is like a challenge, and there is only a sense of accomplishment if there is a challenge. For me this is the best trait for a backend developer.',
         subText:
           'A common way to solve a problem is, by going from simplicity to complexity but what makes me more excited is reverting it from complexity to simplicity. This will make my codes readable, maintainable, and efficient.',
         show: false
