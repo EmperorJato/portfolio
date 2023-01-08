@@ -22,7 +22,7 @@
           </div>
           <v-hover>
             <template #default="{ hover }">
-              <v-carousel cycle show-arrows-on-hover>
+              <v-carousel cycle show-arrows-on-hover hide-delimiter-background interval="10000">
                 <v-carousel-item
                   v-for="(project, i) in projects"
                   :key="i"
