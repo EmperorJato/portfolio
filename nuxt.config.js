@@ -14,7 +14,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'steto javellana portfolio' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -31,6 +31,10 @@ export default {
   plugins: [
     {
       src: '~/plugins/aos.js',
+      ssr: false
+    },
+    {
+      src: '~/plugins/pswipe.js',
       ssr: false
     }
   ],
@@ -90,6 +94,6 @@ export default {
       auth: true,
       firestore: true
     }
- }
+  }
 
 }
