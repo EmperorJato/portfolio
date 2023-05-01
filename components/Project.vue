@@ -22,7 +22,12 @@
           </div>
           <v-hover>
             <template #default="{ hover }">
-              <v-carousel cycle show-arrows-on-hover hide-delimiter-background interval="10000">
+              <v-carousel
+                cycle
+                show-arrows-on-hover
+                hide-delimiter-background
+                interval="10000"
+              >
                 <v-carousel-item
                   v-for="(project, i) in projects"
                   :key="i"
@@ -58,7 +63,7 @@
                           </v-tooltip>
                         </v-avatar>
                       </div>
-                      <v-btn color="primary mt-5">
+                      <v-btn color="primary mt-5" @click="dialog = true">
                         See more info
                       </v-btn>
                     </v-overlay>
@@ -69,6 +74,7 @@
           </v-hover>
         </v-col>
       </v-row>
+      <UIDialogsFullScreen :dialog="dialog" @close="dialog = false" />
     </v-container>
   </section>
 </template>
@@ -78,6 +84,8 @@ import { mdiFolder } from '@mdi/js'
 export default {
   name: 'Project',
   data: () => ({
+    googleDrive: 'http://drive.google.com/uc?export=view&id=',
+    dialog: false,
     overlay: false,
     icons: {
       mdiFolder
@@ -116,7 +124,19 @@ export default {
     ],
     projectStacks: {
       hrmPayroll: [3, 4, 11, 12]
-    }
+    }, 
+
+    
+    axieTracker: [
+      {
+        title: 'Login',
+        id: '17ZrYGJz6EQocUSlXaEOVRTw99g7rv2xQ'
+      },
+      {
+        title: 'Register',
+        id: '1keIiR2W7W923ReDy18deVnyc_-1Cfsqv'
+      }
+    ]
   })
 }
 </script>

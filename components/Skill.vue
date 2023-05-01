@@ -104,7 +104,7 @@ export default {
       {
         img: require('~/static/img/skill/problem_solving.png'),
         title: 'Problem Solving',
-        text: 'Problem solving is like a challenge, and there is only a sense of accomplishment if there is a challenge. For me this is the best trait for a backend developer.',
+        text: 'Problem solving is like a challenge that needs to be dealt with and there is only a sense of accomplishment if there is a challenge.',
         subText:
           'A common way to solve a problem is, by going from simplicity to complexity but what makes me more excited is reverting it from complexity to simplicity. This will make my codes readable, maintainable, and efficient.',
         show: false
@@ -112,7 +112,7 @@ export default {
       {
         img: require('~/static/img/skill/empathy.png'),
         title: 'Empathy',
-        text: 'Empathy is linked to intelligence. From my perspective this is the best trait for frontend developer. If I understand and share the feeling of my users. With sincere emphathy, I will be wise and discerning in developing a user-friendly applications.'
+        text: 'Empathy is linked to intelligence. If you understand and share the feeling of your users, with sincere emphathy, you will be wise and discerning in developing a user-friendly applications.' 
       },
       {
         img: require('~/static/img/skill/time_management.png'),
