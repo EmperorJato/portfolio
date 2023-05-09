@@ -23,7 +23,7 @@
           </div>
 
           <v-row>
-            <v-col cols="12" md="5">
+            <v-col cols="12" md="6">
               <div class="subtitle-1">
                 <p data-aos="fade-right">
                   Please let me know if you have any suitable position for me.
@@ -42,7 +42,7 @@
                 </div>
               </div>
             </v-col>
-            <v-col cols="12" md="7">
+            <v-col cols="12" md="6">
               <v-alert
                 v-model="alert.show"
                 dismissible
