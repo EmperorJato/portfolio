@@ -133,7 +133,7 @@ export default {
       {
         img: require('~/static/img/skill/perseverance.png'),
         title: 'Self-improvement & Perseverance',
-        text: 'Technology is evolving everyday. To adapt to these new technologies, one must learn it no matter how bitter the process is, never stop learning and self-improving, and use them as an advantage to your career.',
+        text: 'Technology is evolving everyday. To adapt to these new technologies, one must learn it no matter how bitter the process is, never stop learning and self-improving. There shall be a moment that these learnings will be used as an advantage to your career.',
         // subText:
         //   'Self-improving is really hard for me due to lack of talent. Only by hardworking and persevering can make me further from this self-improvement. I truly believe that as long as I persevere, I will see results.',
         show: false
