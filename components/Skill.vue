@@ -112,7 +112,7 @@ export default {
       {
         img: require('~/static/img/skill/empathy.png'),
         title: 'Empathy',
-        text: 'Empathy is linked to intelligence. If you understand and share the feeling of your users, with sincere emphathy, you will be wise and discerning in developing a user-friendly applications.' 
+        text: 'Empathy is linked to intelligence. If you understand and share the feeling of your users, with sincere emphathy, you will be wise and discerning in developing a user-friendly applications.'
       },
       {
         img: require('~/static/img/skill/time_management.png'),

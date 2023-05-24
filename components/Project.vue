@@ -124,9 +124,8 @@ export default {
     ],
     projectStacks: {
       hrmPayroll: [3, 4, 11, 12]
-    }, 
+    },
 
-    
     axieTracker: [
       {
         title: 'Login',
