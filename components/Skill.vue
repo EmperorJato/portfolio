@@ -104,37 +104,38 @@ export default {
       {
         img: require('~/static/img/skill/problem_solving.png'),
         title: 'Problem Solving',
-        text: 'Problem solving is like a challenge that needs to be dealt with and there is only a sense of accomplishment if there is a challenge.',
+        // Problem solving is like a challenge and there is only a sense of accomplishment if there is a challenge.
+        text: 'Breaking down complex problem into pieces and then develop solutions to those problem, after that assemble them just like a jigsaw puzzle.',
         subText:
-          'A common way to solve a problem is, by going from simplicity to complexity but what makes me more excited is reverting it from complexity to simplicity. This will make my codes readable, maintainable, and efficient.',
+          "A common way to solve a problem is, by going from simplicity to complexity but what's more challenging is by reverting it from complexity to simplicity. This will make my codes readable, maintainable, and efficient.",
         show: false
       },
       {
         img: require('~/static/img/skill/empathy.png'),
         title: 'Empathy',
-        text: 'Empathy is linked to intelligence. If you understand and share the feeling of your users, with sincere emphathy, you will be wise and discerning in developing a user-friendly applications.'
+        text: 'Empathy is linked to intelligence. By sharing and understanding of the user`s feelings, with sincere emphathy a developer will become wise and discerning in creating a user-friendly applications.'
       },
       {
         img: require('~/static/img/skill/time_management.png'),
         title: 'Time Management',
-        text: 'Organizing and planning time, helps me reduce stress at work. Setting a time frame for my tasks can increase my productivity and a sense of direction in my work.'
+        text: 'Organizing and planning time help reduce stress at work. Setting a time frame for the task can increase the productivity and a sense of direction in work.'
       },
       {
         img: require('~/static/img/skill/team_work.png'),
         title: 'Teamwork',
-        text: 'I believe that sharing information, collaborating, asking questions and helping if there is a problem will lead the team to success.'
+        text: 'Developing camaraderie, sharing information and collaborating will boost productivity, and maintain harmonious environment that can lead the team to success.'
       },
       {
         img: require('~/static/img/skill/innovation.png'),
         title: 'Innovation',
-        text: 'As long as I always open to new things and ideas, opportunities will arise. I like innovation because sometimes, these new strange ideas are essential for pioneering achievements.'
+        text: 'Opportunities will arise for being always open to new things and ideas. Sometimes, these new strange ideas are essential for pioneering achievements.'
       },
       {
         img: require('~/static/img/skill/perseverance.png'),
         title: 'Self-improvement & Perseverance',
-        text: 'As a developer this is the most important trait of all. Technology is evolving everyday. To adapt to these new technologies, I must learn and use them as my advantage, no matter how bitter the process is, I will never stop learning and self-improving.',
-        subText:
-          'Self-improving is really hard for me due to lack of talent. Only by hardworking and persevering can make me further from this self-improvement. I truly believe that as long as I persevere, I will see results.',
+        text: 'Technology is evolving everyday. To adapt to these new technologies, one must learn it no matter how bitter the process is, never stop learning and self-improving. There shall be a moment that these learnings will be used as an advantage to your career.',
+        // subText:
+        //   'Self-improving is really hard for me due to lack of talent. Only by hardworking and persevering can make me further from this self-improvement. I truly believe that as long as I persevere, I will see results.',
         show: false
       }
     ]
