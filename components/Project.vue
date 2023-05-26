@@ -58,7 +58,7 @@
                           </v-tooltip>
                         </v-avatar>
                       </div>
-                      <v-btn color="primary mt-5">
+                      <v-btn color="primary mt-5" @click="dialog = !dialog">
                         See more info
                       </v-btn>
                     </v-overlay>
@@ -69,6 +69,15 @@
           </v-hover>
         </v-col>
       </v-row>
+
+      <UIDialogsProject
+        :show-dialog="dialog"
+        :project="{
+          title : 'Axie Tracker',
+
+        }"
+        @closeDialog="dialog = false"
+      />
     </v-container>
   </section>
 </template>
@@ -78,6 +87,7 @@ import { mdiFolder } from '@mdi/js'
 export default {
   name: 'Project',
   data: () => ({
+    dialog: false,
     overlay: false,
     icons: {
       mdiFolder
