@@ -69,12 +69,11 @@
           </v-hover>
         </v-col>
       </v-row>
-
       <UIDialogsProject
         :show-dialog="dialog"
         :project="{
           title : 'Axie Tracker',
-
+          key : 'axieTracker'
         }"
         @closeDialog="dialog = false"
       />
