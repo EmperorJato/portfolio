@@ -26,8 +26,7 @@
                 I'm Steto <span class="primary--text">Javellana</span>
               </div>
               <p class="title">
-                A web developer passionate about creating a business web
-                applications from Bacolod City,
+                A competent backend developer adept at solving complex problem and creating optimized algorithm from Bacolod City,
                 <span class="primary--text">Philippines</span>
               </p>
               <div class="d-flex justify-content-start flex-wrap">
