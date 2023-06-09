@@ -16,15 +16,15 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'steto javellamna portfolio' },
       { name: 'format-detection', content: 'telephone=no' },
-      { hid: 'og:url', property: 'og:url', content: 'https://www.stetojavellana.info/' },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:title', property: 'og:title', content: 'Steto Javellana Portfolio' },
-      { hid: 'og:desc', property: 'og:description', content: 'My services and grind' },
+      { property: 'og:url', content: 'https://www.stetojavellana.info/' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:title', content: 'Steto Javellana Portfolio' },
+      { property: 'og:description', content: 'My services and grind' },
       {
-        hid: 'og:image',
         property: 'og:image',
-        content: '/me.jpg'
+        content: 'https://stetojavellana.info/me.jpg'
       },
+       { name: 'twitter:card', content: 'summary_large_image' },
 
     ],
     link: [
@@ -40,10 +40,12 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     {
-      src: '~/plugins/aos.js'
+      src: '~/plugins/aos.js',
+      ssr: false
     },
     {
-      src: '~/plugins/pswipe.js'
+      src: '~/plugins/pswipe.js',
+      ssr: false
     }
   ],
 
