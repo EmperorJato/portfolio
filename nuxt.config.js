@@ -16,10 +16,11 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'steto javellamna portfolio' },
       { name: 'format-detection', content: 'telephone=no' },
-      { hid: 'og-title', property: 'og:title', content: 'Steto Javellana Portfolio' },
-      { hid: 'og-desc', property: 'og:description', content: 'My services and grind' },
+      { hid: 'og:title', property: 'og:title', content: 'Steto Javellana Portfolio' },
+      { hid: 'og:desc', property: 'og:description', content: 'My services and grind' },
       {
-        hid: 'og-image', property: 'og:image',
+        hid: 'og:image',
+        property: 'og:image',
         content: '/me.jpeg'
       }
 
