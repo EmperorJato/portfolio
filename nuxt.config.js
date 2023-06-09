@@ -23,7 +23,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://stetojavellana.info/me.jpg'
+        content: '/me.jpg'
       },
 
     ],
@@ -40,12 +40,10 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     {
-      src: '~/plugins/aos.js',
-      ssr: false
+      src: '~/plugins/aos.js'
     },
     {
-      src: '~/plugins/pswipe.js',
-      ssr: false
+      src: '~/plugins/pswipe.js'
     }
   ],
 
