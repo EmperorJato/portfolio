@@ -16,14 +16,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'steto javellamna portfolio' },
       { name: 'format-detection', content: 'telephone=no' },
-      { hid: 'og-url', property: 'og:url', content: 'https://www.stetojavellana.info/' },
-      { hid: 'og-type', property: 'og:type', content: 'website' },
-      { hid: 'og-title', property: 'og:title', content: 'Steto Javellana Portfolio' },
-      { hid: 'og-desc', property: 'og:description', content: 'My services and grind' },
+      { hid: 'og:url', property: 'og:url', content: 'https://www.stetojavellana.info/' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:title', property: 'og:title', content: 'Steto Javellana Portfolio' },
+      { hid: 'og:desc', property: 'og:description', content: 'My services and grind' },
       {
-        hid: 'og-image',
+        hid: 'og:image',
         property: 'og:image',
-        content: 'https://stetojavellana.info/me.jpeg'
+        content: 'https://stetojavellana.info/me.jpg'
       },
 
     ],
