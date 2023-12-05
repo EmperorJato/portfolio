@@ -1,5 +1,8 @@
 <template>
-  <section id="homeSection" :class="$vuetify.breakpoint.smAndDown ? 'pt-16' : ''">
+  <section
+    id="homeSection"
+    :class="$vuetify.breakpoint.smAndDown ? 'pt-16' : ''"
+  >
     <v-container fluid>
       <v-row align="center" justify="center">
         <v-col cols="12" md="10" xl="8">
@@ -9,9 +12,7 @@
                 <v-icon color="primary" left>
                   {{ icons.mdiHome }}
                 </v-icon>
-                <div class="section-title">
-                  introduction
-                </div>
+                <div class="section-title">introduction</div>
               </div>
               <div
                 class="font-weight-bold"
@@ -26,7 +27,8 @@
                 I'm Steto <span class="primary--text">Javellana</span>
               </div>
               <p class="title">
-                A competent backend developer adept at solving complex problems and creating optimized algorithms, based in Bacolod City,
+                A competent backend developer adept at solving complex problems
+                and creating optimized algorithms, based in Bacolod City,
                 <span class="primary--text">Philippines</span>
               </p>
               <div class="d-flex justify-content-start flex-wrap">
@@ -52,25 +54,16 @@
                   </v-icon>
                 </v-btn>
 
-                <v-btn
-                  color="white"
-                  outlined
-                  class="mt-2"
-                  href="#"
-                >
-                  <span class="primary--text">
-                    Download CV
-                  </span>
+                <v-btn color="white" outlined class="mt-2" href="#">
+                  <span class="primary--text"> Download CV </span>
                 </v-btn>
               </div>
             </v-col>
-            <v-col
-              cols="12"
-              md="6"
-              class="d-flex justify-end d-sm-and-down-none d-md-flex"
-            >
-              <div class="cyan-bg">
-                <v-img src="/img/me.png" contain />
+            <v-col cols="12" md="6" class="d-sm-and-down-none d-md-flex">
+              <div class="d-flex justify-end">
+                <div class="cyan-bg">
+                  <v-img src="/img/me.png" contain />
+                </div>
               </div>
             </v-col>
           </v-row>
@@ -84,18 +77,18 @@
 </template>
 
 <script>
-import { mdiHome, mdiLinkedin, mdiGithub, mdiFileAccount } from '@mdi/js'
+import { mdiHome, mdiLinkedin, mdiGithub, mdiFileAccount } from "@mdi/js";
 export default {
-  name: 'Home',
+  name: "Home",
   data: () => ({
     icons: {
       mdiHome,
       mdiLinkedin,
       mdiGithub,
-      mdiFileAccount
-    }
-  })
-}
+      mdiFileAccount,
+    },
+  }),
+};
 </script>
 
 <style scoped>
@@ -119,5 +112,4 @@ export default {
   width: 100%;
   overflow: hidden;
 }
-
 </style>
