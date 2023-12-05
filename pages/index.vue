@@ -67,7 +67,7 @@
             <v-col
               cols="12"
               md="6"
-              class="d-flex justify-end d-none d-sm-flex"
+              class="d-flex justify-end d-sm-none d-md-flex"
             >
               <div class="cyan-bg">
                 <v-img src="/img/me.png" contain />
