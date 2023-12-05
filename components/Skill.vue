@@ -105,7 +105,7 @@ export default {
         img: require('~/static/img/skill/problem_solving.png'),
         title: 'Problem Solving',
         // Problem solving is like a challenge and there is only a sense of accomplishment if there is a challenge.
-        text: 'Breaking down complex problem into pieces and then develop solutions to those problem, after that assemble them just like a jigsaw puzzle.',
+        text: 'Breaking down complex problems into pieces, developing solutions for each problem, and then assembling them is akin to solving a jigsaw puzzle.',
         subText:
           "A common way to solve a problem is, by going from simplicity to complexity but what's more challenging is by reverting it from complexity to simplicity. This will make my codes readable, maintainable, and efficient.",
         show: false
@@ -113,27 +113,27 @@ export default {
       {
         img: require('~/static/img/skill/empathy.png'),
         title: 'Empathy',
-        text: 'Empathy is linked to intelligence. By sharing and understanding of the user`s feelings, with sincere emphathy a developer will become wise and discerning in creating a user-friendly applications.'
+        text: "Empathy is linked to intelligence. By sharing and understanding the user's feelings, with sincere empathy, a developer will become wise and discerning in creating user-friendly applications."
       },
       {
         img: require('~/static/img/skill/time_management.png'),
         title: 'Time Management',
-        text: 'Organizing and planning time help reduce stress at work. Setting a time frame for the task can increase the productivity and a sense of direction in work.'
+        text: 'Organizing and planning time helps reduce stress at work. Setting a time frame for tasks can increase productivity and provide a sense of direction in the work.'
       },
       {
         img: require('~/static/img/skill/team_work.png'),
         title: 'Teamwork',
-        text: 'Developing camaraderie, sharing information and collaborating will boost productivity, and maintain harmonious environment that can lead the team to success.'
+        text: 'Developing camaraderie, sharing information, and collaborating will boost productivity and maintain a harmonious environment that can lead the team to success.'
       },
       {
         img: require('~/static/img/skill/innovation.png'),
         title: 'Innovation',
-        text: 'Opportunities will arise for being always open to new things and ideas. Sometimes, these new strange ideas are essential for pioneering achievements.'
+        text: 'Opportunities arise when one remains open to new things and ideas. Sometimes, these seemingly strange ideas are essential for pioneering achievements.'
       },
       {
         img: require('~/static/img/skill/perseverance.png'),
         title: 'Self-improvement & Perseverance',
-        text: 'Technology is evolving everyday. To adapt to these new technologies, one must learn it no matter how bitter the process is, never stop learning and self-improving. There shall be a moment that these learnings will be used as an advantage to your career.',
+        text: 'Technology is evolving every day. To adapt to these new technologies, one must embrace the learning process, no matter how challenging it may be. Never stop learning and striving for self-improvement. These acquired skills will eventually become valuable assets in advancing your career.',
         // subText:
         //   'Self-improving is really hard for me due to lack of talent. Only by hardworking and persevering can make me further from this self-improvement. I truly believe that as long as I persevere, I will see results.',
         show: false

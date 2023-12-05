@@ -198,11 +198,10 @@ export default {
     },
     frontend: {
       title: 'FrontEnd',
-      subTitle: 'I can develop a pleasant experience to the users.',
+      subTitle: 'I can develop a pleasant experience for the users.',
       experience: [
         'Vue.js Ecosystem',
         'Ajax or Axios',
-        'JSON Mapping',
         'Modifying Plugins or 3rd Party API',
         'Promises',
         'API Integration'
@@ -210,7 +209,7 @@ export default {
     },
     backend: {
       title: 'BackEnd',
-      subTitle: 'I can create a secure and fast response rest services.',
+      subTitle: 'I can create secure and fast-response REST services.',
       experience: [
         'OOP and MVC',
         'Authorization, Authentication',
@@ -222,8 +221,9 @@ export default {
     },
     database: {
       title: 'Database',
-      subTitle: 'I can manage database to make it organize and efficient.',
+      subTitle: 'I can manage a database to make it organized and efficient.',
       experience: [
+        'ERD',
         'Stored Procedure',
         'Raw SQL queries',
         'Indexing',

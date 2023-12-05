@@ -26,7 +26,7 @@
                 I'm Steto <span class="primary--text">Javellana</span>
               </div>
               <p class="title">
-                A competent backend developer adept at solving complex problem and creating optimized algorithm from Bacolod City,
+                A competent backend developer adept at solving complex problems and creating optimized algorithms, based in Bacolod City,
                 <span class="primary--text">Philippines</span>
               </p>
               <div class="d-flex justify-content-start flex-wrap">
