@@ -118,7 +118,6 @@ export default {
         experience: [
           'Vue.js Ecosystem',
           'Ajax or Axios',
-          'JSON Mapping',
           'Modifying Plugins or 3rd Party API',
           'Promises'
         ]
@@ -131,18 +130,21 @@ export default {
           'Authorization, Authentication',
           'Rules, Permissions, and Middlewares',
           'JWT token and Refresh token',
-          'ORM Tools'
+          'ORM Tools',
+          'RESTful API'
         ]
       },
       {
         title: 'Database',
         subTitle: 'I can manage databases to make it efficiently and flexibly.',
         experience: [
+          'ERD',
           'Stored Procedure',
           'Raw SQL queries',
           'Indexing',
           'Migration',
-          'Table Relationship'
+          'Table Relationship',
+          'Normalization and Denormalization'
         ]
       }
     ]
