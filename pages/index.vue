@@ -59,7 +59,7 @@
                 </v-btn>
               </div>
             </v-col>
-            <v-col cols="12" md="6" class="d-sm-and-down-none d-md-flex">
+            <v-col cols="12" md="6" class="hidden-sm-and-down">
               <div class="d-flex justify-end">
                 <div class="cyan-bg">
                   <v-img src="/img/me.png" contain />
