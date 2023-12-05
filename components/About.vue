@@ -114,7 +114,7 @@ export default {
       {
         title: 'FrontEnd',
         subTitle:
-          'I can develop a pleasant experience to the user such as easy to understand user flow, validations, and errors.',
+          'I can replicate the design and user experience provided by the UI/UX team.',
         experience: [
           'Vue.js Ecosystem',
           'Ajax or Axios',
