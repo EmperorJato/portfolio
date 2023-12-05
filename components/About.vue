@@ -142,7 +142,6 @@ export default {
           'Stored Procedure',
           'Raw SQL queries',
           'Indexing',
-          'Migration',
           'Table Relationship',
           'Normalization and Denormalization'
         ]
