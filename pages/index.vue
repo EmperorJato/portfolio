@@ -1,7 +1,6 @@
 <template>
   <section
     id="homeSection"
-    :class="$vuetify.breakpoint.smAndDown ? 'pt-16' : ''"
   >
     <v-container fluid>
       <v-row align="center" justify="center">
