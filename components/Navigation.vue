@@ -13,12 +13,12 @@
         <v-img src="/img/logo.png" max-width="50px" />
       </v-toolbar-title>
       <v-spacer />
-      <v-app-bar-nav-icon v-if="isXs" @click.stop="drawer = !drawer">
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="d-flex d-sm-none">
         <v-icon large>
           {{ icons.mdiReorderHorizontal }}
         </v-icon>
       </v-app-bar-nav-icon>
-      <div v-else v-show="show">
+      <div class="d-none d-sm-flex">
         <v-btn text @click="$vuetify.goTo('#homeSection')">
           <span class="mr-2">Home</span>
         </v-btn>
@@ -93,9 +93,7 @@ export default {
     flat: Boolean
   },
   data: () => ({
-    show: false,
     drawer: null,
-    isXs: false,
     icons: {
       mdiReorderHorizontal
     },
@@ -106,36 +104,7 @@ export default {
       [mdiFolder, 'Projects', '#projectSection'],
       [mdiCardAccountMail, 'Contact', '#contactSection']
     ]
-  }),
-  watch: {
-    isXs (val) {
-      if (!val) {
-        if (this.drawer) {
-          this.drawer = false
-        }
-      }
-    }
-  },
-  beforeDestroy () {
-    if (typeof window === 'undefined') {
-      return
-    }
-
-    window.removeEventListener('resize', this.onResize, { passive: true })
-  },
-
-  mounted () {
-    this.onResize()
-    window.addEventListener('resize', this.onResize, { passive: true })
-    this.$nextTick(function () {
-      this.show = true
-    })
-  },
-  methods: {
-    onResize () {
-      this.isXs = window.innerWidth < 970
-    }
-  }
+  })
 }
 </script>
 
