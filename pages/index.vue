@@ -11,7 +11,9 @@
                 <v-icon color="primary" left>
                   {{ icons.mdiHome }}
                 </v-icon>
-                <div class="section-title">introduction</div>
+                <div class="section-title">
+                  introduction
+                </div>
               </div>
               <div
                 class="font-weight-bold"
@@ -76,18 +78,18 @@
 </template>
 
 <script>
-import { mdiHome, mdiLinkedin, mdiGithub, mdiFileAccount } from "@mdi/js";
+import { mdiHome, mdiLinkedin, mdiGithub, mdiFileAccount } from '@mdi/js'
 export default {
-  name: "Home",
+  name: 'Home',
   data: () => ({
     icons: {
       mdiHome,
       mdiLinkedin,
       mdiGithub,
-      mdiFileAccount,
-    },
-  }),
-};
+      mdiFileAccount
+    }
+  })
+}
 </script>
 
 <style scoped>
