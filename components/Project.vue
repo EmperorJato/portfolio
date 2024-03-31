@@ -27,7 +27,6 @@
                   v-for="(project, i) in projects"
                   :key="i"
                   :src="project.img"
-                  contain
                 >
                   <v-fade-transition>
                     <v-overlay

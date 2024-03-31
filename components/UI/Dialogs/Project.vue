@@ -30,8 +30,9 @@
               >
                 <v-card>
                   <v-img
-                    :src="googleDrive + item.id"
-                    :lazy-src="googleDrive + item.id"
+                    cover
+                    :src="item.img"
+                    :lazy-src="item.img"
                     aspect-ratio="1"
                     height="200px"
                   >
@@ -73,7 +74,7 @@ export default {
   },
   data () {
     return {
-      googleDrive: 'http://drive.google.com/uc?export=view&id=',
+      googleDrive: 'https://lh3.google.com/u/0/d/',
       notifications: false,
       sound: true,
       widgets: false,
@@ -81,63 +82,63 @@ export default {
         axieTracker: [
           {
             title: 'Login',
-            id: '17ZrYGJz6EQocUSlXaEOVRTw99g7rv2xQ'
+            img: require('~/static/img/project/axie-tracker/login.jpg')
           },
           {
             title: 'Register',
-            id: '1keIiR2W7W923ReDy18deVnyc_-1Cfsqv'
+            img: require('~/static/img/project/axie-tracker/register.jpg')
           },
           {
             title: 'Profile',
-            id: '1MZ1Qv8lN_uNXOJZm8TeqgARAgXMNPgRL'
+            img: require('~/static/img/project/axie-tracker/profile.jpg')
           },
           {
             title: 'Profile',
-            id: '1NPlQ0st-CGmrzihsjCFw8wBNzrbm_j5Z'
+            img: require('~/static/img/project/axie-tracker/profile-2.jpg')
           },
           {
             title: 'Dashboard',
-            id: '1QTbdGQOdXRRqPtNspgnHMwkm1veC2cng'
+            img: require('~/static/img/project/axie-tracker/dashboard-1.jpg')
           },
           {
             title: 'Dashboard',
-            id: '1tKTgEkrncdrufEbUuzGbt3aAxEiMpV_k'
+            img: require('~/static/img/project/axie-tracker/dashboard-2.jpg')
           },
           {
             title: 'Dashboard',
-            id: '1bldNXOU-CavyH7lW7FFUrwG_B5fXpzzx'
+            img: require('~/static/img/project/axie-tracker/dashboard-3.jpg')
           },
           {
             title: 'Scholarship',
-            id: '1yoR84dIdyUHeu4rC5YjxZTslqh_MSi-h'
+            img: require('~/static/img/project/axie-tracker/scholarship.jpg')
           },
           {
             title: 'Investment',
-            id: '13O9hg3q73BHtNXUeRDdaQ4AZUw3-jO9u'
+            img: require('~/static/img/project/axie-tracker/investment.jpg')
           },
           {
             title: 'Simulator Breeding',
-            id: '11TcTSLExBISKD35eM6nyxdBdI8T-yr_p'
+            img: require('~/static/img/project/axie-tracker/simulator-breeding.jpg')
           },
           {
             title: 'Simulator Pricing',
-            id: '13zwCoR400_qBj8Uw3lNTLxtVvYPj6k7p'
+            img: require('~/static/img/project/axie-tracker/simulator-pricing.jpg')
           },
           {
             title: 'Leaderboard Local Rank',
-            id: '1FW_eat69qLrKY6eLjD027aevBiLaygab'
+            img: require('~/static/img/project/axie-tracker/leaderboards-local.jpg')
           },
           {
             title: 'Leaderboard World Rank',
-            id: '1FW_eat69qLrKY6eLjD027aevBiLaygab'
+            img: require('~/static/img/project/axie-tracker/leaderboards-world.jpg')
           },
           {
             title: 'Accounts Users',
-            id: '14mwUj8flr082CWoW8bVOWwwCawQDLRuo'
+            img: require('~/static/img/project/axie-tracker/account-users.jpg')
           },
           {
             title: 'Accounts Roles',
-            id: '1_VzyKc1_qxr7RrBKPGs_ZGDtUHn0Azez'
+            img: require('~/static/img/project/axie-tracker/account-role.jpg')
           }
 
         ]
