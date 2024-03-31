@@ -28,9 +28,7 @@
                 I'm Steto <span class="primary--text">Javellana</span>
               </div>
               <p class="title">
-                A competent backend developer adept at solving complex problems
-                and creating optimized algorithms, based in Bacolod City,
-                <span class="primary--text">Philippines</span>
+                A full-stack developer based in Bacolod City, <span class="primary--text">Philippines</span> with a knack for solving problems and building efficient code. I design user-friendly applications, managing everything from front-end to back-end.
               </p>
               <div class="d-flex justify-content-start flex-wrap">
                 <v-btn
@@ -55,7 +53,7 @@
                   </v-icon>
                 </v-btn>
 
-                <v-btn color="white" outlined class="mt-2" href="#">
+                <v-btn color="white" outlined class="mt-2" download href="/CV_STETO_JAVELLANA.pdf">
                   <span class="primary--text"> Download CV </span>
                 </v-btn>
               </div>
